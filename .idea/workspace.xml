@@ -4,22 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab537b6b-5677-4a71-a3e8-8cf6b3cc247c" name="Changes" comment="Things to improve">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="ab537b6b-5677-4a71-a3e8-8cf6b3cc247c" name="Changes" comment="New Website">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-CgCJ7ktB.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-CvmP9xNQ.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LogoCarousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/BenefitsSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/BenefitsSection/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Carousell/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Carousell/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Footer/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sections/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Hero/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/Navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Navbar/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/PricingSection/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/VideoLeft/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/VideoLeft/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/VideoRight/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/VideoRight/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +117,7 @@
       <workItem from="1765715907181" duration="2410000" />
       <workItem from="1765921907879" duration="8687000" />
       <workItem from="1766087198488" duration="6623000" />
-      <workItem from="1766265123822" duration="5186000" />
+      <workItem from="1766265123822" duration="5798000" />
     </task>
     <task id="LOCAL-00001" summary="Things to improve">
       <option name="closed" value="true" />
@@ -140,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761389686164</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New Website">
+      <option name="closed" value="true" />
+      <created>1766272247072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1766272247072</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +143,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Things to improve" />
-    <option name="LAST_COMMIT_MESSAGE" value="Things to improve" />
+    <MESSAGE value="New Website" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Website" />
   </component>
 </project>

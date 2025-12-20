@@ -2,12 +2,12 @@ import Carousel from "@/sections/Carousell";
 import AIAssistantSection from "@/sections/VideoRight";
 import AIAssistantSectionReversed from "@/sections/VideoLeft";
 import CaseStudiesCarousel from "@/sections/SectionsPlan";
-import BenefitsSection from "@/sections/BenefitsSection";
 import PricingCards from "@/sections/PricingCards";
 import Testimonial from "@/sections/Testimonial";
 import FAQ from "@/sections/FAQ";
 import AIAssistantSection2 from "@/sections/VideoRight2";
 import AIAssistantSectionLeft2 from "@/sections/VideoLeft2";
+import BenefitsSection from "@/sections/BenefitsSection";
 export const Hero = () => {
     return (
         <div className="relative content-center items-center bg-black box-border caret-transparent gap-x-0 contents flex-col h-min justify-start min-h-[1000px] gap-y-0 overflow-hidden">
