@@ -22,13 +22,6 @@ export const Navbar = () => {
                             className="flex items-center gap-2 text-blue-700 hover:opacity-80 transition-opacity"
                             onClick={closeMobileMenu}
                         >
-                            <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0">
-                                <img
-                                    src="assets/Logo.svg"
-                                    alt="Icon"
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
                             <p className="text-white text-lg sm:text-xl md:text-[21px] font-bold tracking-[-1.26px] leading-tight font-figtree">
                                 IWM Academy
                             </p>
@@ -38,59 +31,67 @@ export const Navbar = () => {
                         <div className="hidden md:flex items-center gap-4">
                             <div className="flex items-center gap-1">
                                 <a
-                                    href="./"
+                                    href="#"
                                     className="px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] leading-[16.8px] font-figtree hover:bg-white/10 rounded transition-colors"
                                 >
                                     Home
                                 </a>
                                 <a
-                                    href="./about"
+                                    href="#platform"
                                     className="px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] leading-[16.8px] font-figtree hover:bg-white/10 rounded transition-colors"
                                 >
-                                    About
+                                    Our Platform
                                 </a>
                                 <a
-                                    href="./blog"
+                                    href="#groups"
                                     className="px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] leading-[16.8px] font-figtree hover:bg-white/10 rounded transition-colors"
                                 >
-                                    Blog
+                                    Our Groups
                                 </a>
                                 <a
-                                    href="./contact"
+                                    href="#course"
                                     className="px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] leading-[16.8px] font-figtree hover:bg-white/10 rounded transition-colors"
                                 >
-                                    Contact
+                                    Our Course
+                                </a>
+                                <a
+                                    href="#FAQ"
+                                    className="px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] leading-[16.8px] font-figtree hover:bg-white/10 rounded transition-colors"
+                                >
+                                    FAQ
                                 </a>
                             </div>
 
                             {/* CTA Button - Desktop */}
                             <a
-                                href="https://cal.com/"
+                                href="#pricing"
                                 className="relative px-[13px] py-[9px] bg-purple-700 text-white text-sm font-medium tracking-[-0.28px] leading-[16.8px] font-figtree rounded-md shadow-[rgba(0,0,0,0.15)_0px_0.706592px_0.706592px_-0.625px,rgba(0,0,0,0.145)_0px_1.80656px_1.80656px_-1.25px,rgba(0,0,0,0.137)_0px_3.62176px_3.62176px_-1.875px,rgba(0,0,0,0.125)_0px_6.8656px_6.8656px_-2.5px,rgba(0,0,0,0.106)_0px_13.6468px_13.6468px_-3.125px,rgba(0,0,0,0.05)_0px_30px_30px_-3.75px] hover:bg-purple-600 transition-colors after:absolute after:inset-0 after:border after:border-white/10 after:rounded-md after:pointer-events-none"
                             >
-                                Book a call
+                                Pricing
                             </a>
+
+
                         </div>
 
                         {/* Mobile Menu Button */}
-                        <button 
+                        <button
                             className="md:hidden p-2 text-white hover:bg-white/10 rounded transition-all duration-300 ease-in-out transform active:scale-95"
                             onClick={toggleMobileMenu}
                             aria-label="Toggle mobile menu"
                             aria-expanded={isMobileMenuOpen}
                         >
                             <div className="relative w-6 h-6">
-                                <span 
+                                <span
                                     className={`absolute top-0 left-0 w-full h-0.5 bg-current transition-all duration-300 ease-in-out ${
                                         isMobileMenuOpen ? 'rotate-45 top-2.5' : 'rotate-0 top-0'
                                     }`}
                                 />
-                                <span 
+                                <span
                                     className={`absolute top-2.5 left-0 w-full h-0.5 bg-current transition-all duration-300 ease-in-out ${
                                         isMobileMenuOpen ? 'opacity-0' : 'opacity-100'
                                     }`}
                                 />
-                                <span 
+                                <span
                                     className={`absolute top-5 left-0 w-full h-0.5 bg-current transition-all duration-300 ease-in-out ${
                                         isMobileMenuOpen ? '-rotate-45 top-2.5' : 'rotate-0 top-5'
                                     }`}
@@ -100,7 +101,7 @@ export const Navbar = () => {
                     </div>
 
                     {/* Mobile Menu */}
-                    <div 
+                    <div
                         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
                             isMobileMenuOpen 
                                 ? 'max-h-[500px] opacity-100 mt-4 pt-4 border-t border-neutral-800' 
@@ -116,7 +117,7 @@ export const Navbar = () => {
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.05s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                Home
+                                Test4
                             </a>
                             <a
                                 href="./about"
@@ -126,7 +127,7 @@ export const Navbar = () => {
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.1s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                About
+                                Test3
                             </a>
                             <a
                                 href="./blog"
@@ -136,7 +137,7 @@ export const Navbar = () => {
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.15s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                Blog
+                                Test2
                             </a>
                             <a
                                 href="./contact"
@@ -146,7 +147,7 @@ export const Navbar = () => {
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.2s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                Contact
+                                Test1
                             </a>
                             <a
                                 href="https://cal.com/"

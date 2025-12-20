@@ -28,18 +28,17 @@ export default function StockCarousel({
     const [offset, setOffset] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
 
-    // 🎯 AICI ADAUGI LOGO-URILE TALE (Rezoluție recomandată: 128x128px sau 256x256px PNG cu fundal transparent)
     const stockLogos: Record<string, string> = {
         'AAPL': './public/logo/apple.png',        // Apple
         'GOOGL': './public/logo/google.png',      // Google
-        'MSFT': '/logos/microsoft.png',    // Microsoft
-        'AMZN': '/logos/amazon.png',       // Amazon
-        'TSLA': '/logos/tesla.png',        // Tesla
-        'NVDA': '/logos/nvidia.png',       // NVIDIA
-        'META': '/logos/meta.png',         // Meta (Facebook)
-        'NFLX': '/logos/netflix.png',      // Netflix
-        'AMD': '/logos/amd.png',           // AMD
-        'INTC': '/logos/intel.png',        // Intel
+        'MSFT': './public/logo/microsoft.png',    // Microsoft
+        'AMZN': './public/logo/amazon.png',       // Amazon
+        'TSLA': './public/logo/tesla.png',        // Tesla
+        'NVDA': './public/logo/nvidia.png',       // NVIDIA
+        'META': './public/logo/meta.png',         // Meta (Facebook)
+        'NFLX': './public/logo/netflix.png',      // Netflix
+        'AMD': './public/logo/amd.png',           // AMD
+        'INTC': './public/logo/intel.png',        // Intel
     };
 
     const stockNames: Record<string, string> = {

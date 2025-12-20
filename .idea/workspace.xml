@@ -5,147 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab537b6b-5677-4a71-a3e8-8cf6b3cc247c" name="Changes" comment="Things to improve">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinksRevolutPricing.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/GeneralAccess.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ParentComponent.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Preloader.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/PricingCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/TermsModal.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/create-invite/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/create-payment-intent/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/create-subscription/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/payment-success/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BitcoinHome.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BitcoinHome.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckoutPage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/StripeWrapper.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/convertToSubcurrency.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/global.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/select2.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/skins/blue.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/skins/green.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/skins/orange.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Untitled.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/about-us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/404.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/503.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/bg-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/bg-calculator.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/bg-quote.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/bg-user-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/bg-user-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/bg-user.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/bg-video.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/call-to-action-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/backgrounds/coming-soon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/banner1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/banner2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/blog-post-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/blog-post-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/blog-post-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/blog-post-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/blog-post-small-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/blog-post-small-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/blog-post-small-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/user1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/user2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/user3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ceo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/fulllogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/fulllogo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/fulllogo_nobuffer.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/add-bitcoins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/buy-sell-bitcoins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/cost-efficiency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/download-bitcoin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/high-liquidity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/mobile-app.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/payment-options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/strong-security.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/blue/world-coverage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/add-bitcoins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/buy-sell-bitcoins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/cost-efficiency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/download-bitcoin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/high-liquidity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/mobile-app.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/payment-options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/strong-security.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/green/world-coverage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/add-bitcoins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/buy-sell-bitcoins.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/buy-sell1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/buy-sell2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/buy-sell4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/cost-efficiency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/download-bitcoin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/high-liquidity.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/mobile-app.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/payment-options.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/strong-security.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/orange/world-coverage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/payment/american-express.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/payment/maestro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/payment/mastercard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/payment/paypal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/icons/payment/visa.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/print.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/print1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/print_transparent.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slider/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/team/member1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/team/member2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/team/member3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/team/member4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/test1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/vids.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery-2.2.4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.countdown.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/jquery.plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/modernizr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/select2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/remove 1mo earnings.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-CgCJ7ktB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-CvmP9xNQ.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LogoCarousel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/BenefitsSection/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/BenefitsSection/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Carousell/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Carousell/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Footer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Hero/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/PricingSection/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/VideoLeft/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/VideoLeft/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/VideoRight/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/VideoRight/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +44,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/IftimiciucTudorDaniel/DiscordSite.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/IftimiciucTudorDaniel/IWMAcademy&quot;,
     &quot;accountId&quot;: &quot;058b098b-cb16-470b-ad4c-80bf8e5aea67&quot;
   }
 }</component>
@@ -191,7 +65,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tudor/Desktop/New folder/DiscordSite&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tudor/Desktop/New folder/DiscordSite/public/logo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -202,12 +76,15 @@
   }
 }</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\src\sections" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\public\logo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\assets" />
+      <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\public\logo" />
+      <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\public\assets" />
+      <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\src\sections" />
       <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\src" />
-      <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -248,7 +125,12 @@
       <workItem from="1763826914050" duration="14016000" />
       <workItem from="1764092046440" duration="10603000" />
       <workItem from="1764542538177" duration="3121000" />
-      <workItem from="1764623952054" duration="6999000" />
+      <workItem from="1764623952054" duration="7088000" />
+      <workItem from="1765117814360" duration="22749000" />
+      <workItem from="1765715907181" duration="2410000" />
+      <workItem from="1765921907879" duration="8687000" />
+      <workItem from="1766087198488" duration="6623000" />
+      <workItem from="1766265123822" duration="5186000" />
     </task>
     <task id="LOCAL-00001" summary="Things to improve">
       <option name="closed" value="true" />

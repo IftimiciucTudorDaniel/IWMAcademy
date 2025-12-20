@@ -1,6 +1,6 @@
 import { Navbar } from "@/sections/Navbar";
 import { Hero } from "@/sections/Hero";
-import { Footer } from "@/sections/Footer";
+import Footer from "@/sections/Footer";
 
 
 export const App = () => {
@@ -10,50 +10,8 @@ export const App = () => {
             <div className="relative content-center items-center bg-black box-border caret-transparent gap-x-0 flex flex-col h-min justify-start min-h-[1000px] gap-y-0 overflow-hidden">
                 <Navbar />
                 <Hero />
-                <Footer
-                    variant="default"
-                    logoUrl="https://c.animaapp.com/mhrys1hg2q1D6i/assets/icon-1.svg"
-                    logoText="XTRACT"
-                    description="Xtract – Automate Smarter, Optimize Faster, and Grow Stronger."
-                    newsletterTitle="Join our newsletter"
-                    emailPlaceholder="name@email.com"
-                    subscribeButtonText="Subscribe"
-                    linksTitle="Links"
-                    links={[
-                        { text: "Services", href: "./#services" },
-                        { text: "Process", href: "./#process" },
-                        { text: "Case studies", href: "./#cases" },
-                        { text: "Benefits", href: "./#benefits" },
-                        { text: "Pricing", href: "./#pricing" },
-                    ]}
-                    pagesTitle="Pages"
-                    pages={[
-                        { text: "Home", href: "./" },
-                        { text: "About", href: "./about" },
-                        { text: "Blog", href: "./blog" },
-                        { text: "Contact", href: "./contact" },
-                        { text: "404", href: "./404" },
-                    ]}
-                    socialsTitle="Socials"
-                    socials={[
-                        { text: "Instagram", href: "https://instagram.com/" },
-                        { text: "Facebook", href: "https://facebook.com/" },
-                        { text: "Linkedin", href: "https://linkedin.com/" },
-                        { text: "Twitter", href: "https://x.com/" },
-                    ]}
-                />
-                <Footer
-                    variant="copyright"
-                    copyrightLinks={[
-                        { text: "Logo by flaticon", href: "https://www.flaticon.com/" },
-                        {
-                            text: "Visioned and Crafted  by",
-                            href: "https://x.com/xlauncherx7",
-                        },
-                    ]}
-                    highlightedText="Kanishk Dubey"
-                    copyrightText="© All right reserved"
-                />
+                <Footer/>
+
             </div>
             <div className="box-border caret-transparent"></div>
         </div>

@@ -5,8 +5,8 @@ const AIAssistantSection = () => {
     const [isVideoOpen, setIsVideoOpen] = useState(false);
     const [isVisible, setIsVisible] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
-    const sectionRef = useRef(null);
-    const videoRef = useRef(null);
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const videoRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -16,7 +16,7 @@ const AIAssistantSection = () => {
                         setIsVisible(true);
                         setHasAnimated(true);
                         if (videoRef.current) {
-                            videoRef.current.play().catch(err => console.log('Autoplay prevented:', err));
+                            videoRef.current.play().catch((err) => console.log('Autoplay prevented:', err));
                         }
                     }
                 });
@@ -44,26 +44,25 @@ const AIAssistantSection = () => {
                         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                     }`}>
                         <div className="inline-flex items-center gap-2 bg-stone-950/80 border border-neutral-800 rounded-md px-3 py-2">
-                            <span className="text-sm font-medium text-white">AI Assistant</span>
+                            <span className="text-sm font-medium text-white">Education Channel</span>
                         </div>
 
-                        <h3 className="text-4xl md:text-5xl font-medium text-white leading-tight">
-                            Delegate Daily Tasks
+                        <h3 className="text-4xl md:text-4xl font-medium text-white leading-tight">
+                            Trading Education Channel
                         </h3>
 
                         <p className="text-base text-stone-300 leading-relaxed max-w-md">
-                            From managing calendars to drafting emails and summarizing meetings, our AI assistants work around the clock to keep your business running smarter and faster.
-                        </p>
+                            Access comprehensive trading education covering essential topics from short selling mechanics and margin requirements to pre-market trading strategies and developing the disciplined mindset needed for success. Learn the technical details, risk management principles, and mental frameworks that separate the top 1% of traders from the rest.                        </p>
 
                         <div className="flex flex-wrap gap-2.5">
                             <div className="bg-stone-950 border border-neutral-800 rounded-md px-3 py-2">
-                                <span className="text-sm font-medium text-white">Summaries</span>
+                                <span className="text-sm font-medium text-white">Education</span>
                             </div>
                             <div className="bg-stone-950 border border-neutral-800 rounded-md px-3 py-2">
-                                <span className="text-sm font-medium text-white">Scheduling</span>
+                                <span className="text-sm font-medium text-white">Risk Management</span>
                             </div>
                             <div className="bg-stone-950 border border-neutral-800 rounded-md px-3 py-2">
-                                <span className="text-sm font-medium text-white">Many more</span>
+                                <span className="text-sm font-medium text-white">Mindset</span>
                             </div>
                         </div>
                     </div>
@@ -73,7 +72,19 @@ const AIAssistantSection = () => {
                         <div className="bg-stone-950/80 rounded-[22px] overflow-hidden border border-neutral-800 p-3 md:p-6">
 
                             {/* Video container with mask and climbing effect */}
-                            <div className="relative overflow-hidden rounded-[14px]">
+                            <div
+                                className="
+                                relative
+                                overflow-hidden
+                                rounded-[22px]
+                                aspect-[9/16]
+                                h-[420px]
+                                sm:h-[310px]
+                                md:h-[250px]
+                                lg:h-[380px]
+                                mx-auto
+                                bg-black
+                              ">
                                 {/* Climbing video animation */}
                                 <div
                                     className={`transition-all duration-[1500ms] ease-out ${
@@ -88,7 +99,7 @@ const AIAssistantSection = () => {
                                         playsInline
                                     >
                                         <source
-                                            src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                            src="assets/SecondVideo.mp4"
                                             type="video/mp4"
                                         />
                                     </video>
@@ -129,7 +140,7 @@ const AIAssistantSection = () => {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <source
-                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                src="assets/SecondVideo.mp4"
                                 type="video/mp4"
                             />
                             Your browser does not support the video tag.

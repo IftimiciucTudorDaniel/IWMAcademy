@@ -1,207 +1,166 @@
-export type FooterProps = {
-    variant: string;
-    logoUrl?: string;
-    logoText?: string;
-    description?: string;
-    newsletterTitle?: string;
-    emailPlaceholder?: string;
-    subscribeButtonText?: string;
-    linksTitle?: string;
-    links?: Array<{ text: string; href: string }>;
-    pagesTitle?: string;
-    pages?: Array<{ text: string; href: string }>;
-    socialsTitle?: string;
-    socials?: Array<{ text: string; href: string }>;
-    copyrightLinks?: Array<{ text: string; href: string }>;
-    copyrightText?: string;
-    highlightedText?: string;
-};
+import React from 'react';
 
-export const Footer = (props: FooterProps) => {
-    if (props.variant === "copyright") {
-        return (
-            <div
-                name="Copyright"
-                className="relative box-border caret-transparent shrink-0 w-full order-[1005]"
-            >
-                <div className="box-content caret-black block md:aspect-auto md:box-border md:caret-transparent md:contents md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                    <footer
-                        name="Copyright"
-                        className="static [align-items:normal] box-content caret-black gap-x-[normal] block flex-row h-auto justify-normal gap-y-[normal] w-auto p-0 md:relative md:content-center md:items-center md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:h-min md:justify-center md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:px-10 md:scroll-m-0 md:scroll-p-[auto] after:md:accent-auto after:md:box-border after:md:caret-transparent after:md:text-black after:md:block after:md:text-xs after:md:not-italic after:md:normal-nums after:md:font-normal after:md:h-full after:md:tracking-[normal] after:md:leading-[normal] after:md:list-outside after:md:list-disc after:md:pointer-events-none after:md:absolute after:md:text-start after:md:no-underline after:md:indent-[0px] after:md:normal-case after:md:visible after:md:w-full after:md:border-neutral-800 after:md:border-t-2 after:md:border-separate after:md:border-solid after:md:left-0 after:md:top-0 after:md:font-sans_serif md:gap-x-[60px] md:gap-y-[60px] md:overflow-hidden md:py-[25px]"
-                    >
-                        <div className="static [align-items:normal] box-content caret-black block shrink h-auto justify-normal min-h-0 min-w-0 w-auto md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:shrink-0 md:h-min md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:content-center md:items-center md:justify-between">
-                            {props.copyrightLinks?.map((link, index) => (
-                                <div
-                                    key={index}
-                                    className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
-                                >
-                                    <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-wrap font-times md:text-stone-300 md:text-sm md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.28px] md:leading-[16.8px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                        <a
-                                            href={link.href}
-                                            className="box-content caret-black text-wrap md:aspect-auto md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] hover:text-white hover:border-white"
-                                        >
-                                            {link.text}
-                                            {props.highlightedText && index === 1 && (
-                                                <span className="text-black box-content caret-black text-wrap md:text-white md:aspect-auto md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                          {" "}
-                                                    {props.highlightedText}
-                        </span>
-                                            )}
-                                        </a>
-                                    </p>
-                                </div>
-                            ))}
-                            {props.copyrightText && (
-                                <div className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                    <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-wrap font-times md:text-stone-300 md:text-sm md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.28px] md:leading-[16.8px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                        {props.copyrightText}
-                                    </p>
-                                </div>
-                            )}
-                        </div>
-                    </footer>
-                </div>
-            </div>
-        );
-    }
+const Footer: React.FC = () => {
+    const links = {
+        tradingGroups: [
+            { name: '200K Group', href: '#200k-group' },
+            { name: 'Small Cap Group', href: '#small-cap-group' },
+            { name: 'Earnings Group', href: '#earnings-group' },
+            { name: 'Tough Market Group', href: '#tough-market-group' },
+            { name: 'All Groups Bundle', href: '#all-groups' }
+        ],
+        socials: [
+            { name: 'Discord', href: 'https://discord.gg/FYP5zn5qUA' },
+            { name: 'TikTok', href: 'https://www.tiktok.com/@iwmacademy' },
+            { name: 'Instagram', href: 'https://www.instagram.com/iwm.academy/' },
+            { name: 'YouTube', href: 'https://www.youtube.com/@INFINITE.WORLD.MARKETS.ACADEMY' },
+            { name: 'X (Twitter)', href: 'https://x.com/iwmacademy' }
+        ]
+    };
 
     return (
-        <div className="relative box-border caret-transparent shrink-0 w-full order-[1004]">
-            <div className="box-content caret-black block md:aspect-auto md:box-border md:caret-transparent md:contents md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                <footer className="static [align-items:normal] box-content caret-black gap-x-[normal] block flex-row h-auto justify-normal gap-y-[normal] w-auto p-0 md:relative md:content-center md:items-center md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:h-min md:justify-center md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:px-10 md:scroll-m-0 md:scroll-p-[auto] after:md:accent-auto after:md:box-border after:md:caret-transparent after:md:text-black after:md:block after:md:text-xs after:md:not-italic after:md:normal-nums after:md:font-normal after:md:h-full after:md:tracking-[normal] after:md:leading-[normal] after:md:list-outside after:md:list-disc after:md:pointer-events-none after:md:absolute after:md:text-start after:md:no-underline after:md:indent-[0px] after:md:normal-case after:md:visible after:md:w-full after:md:border-neutral-800 after:md:border-t-2 after:md:border-separate after:md:border-solid after:md:left-0 after:md:top-0 after:md:font-sans_serif bg-none md:bg-[radial-gradient(50%_50%_at_50%_3.4%,rgba(129,74,200,0.3)_0%,rgba(171,171,171,0)_100%)] md:gap-x-2.5 md:gap-y-2.5 md:py-16">
-                    <div className="static [align-items:normal] box-content caret-black block shrink h-auto justify-normal min-h-0 min-w-0 w-auto md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:shrink-0 md:h-min md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] gap-x-[normal] max-w-none gap-y-[normal] md:content-start md:items-start md:gap-x-5 md:justify-center md:max-w-[1200px] md:gap-y-5">
-                        <div className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] [align-items:normal] gap-x-[normal] basis-auto grow-0 h-auto gap-y-[normal] w-auto md:content-start md:items-start md:gap-x-[15px] md:basis-0 md:grow md:h-min md:justify-center md:gap-y-[15px] md:w-px md:overflow-hidden">
-                            <div className="static [align-items:normal] box-content caret-black gap-x-[normal] block flex-row shrink h-auto justify-normal min-h-0 min-w-0 gap-y-[normal] w-auto md:relative md:content-start md:items-start md:aspect-auto md:box-border md:caret-transparent md:gap-x-5 md:flex md:flex-col md:shrink-0 md:h-min md:justify-center md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-5 md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                <a
-                                    href="./"
-                                    className="static text-black [align-items:normal] box-content caret-black gap-x-[normal] inline shrink h-auto justify-normal min-h-0 min-w-0 gap-y-[normal] w-auto md:relative md:text-blue-700 md:content-center md:items-center md:aspect-auto md:box-border md:caret-transparent md:gap-x-1 md:flex md:shrink-0 md:h-min md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-1 md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-min md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
-                                >
-                                    <div className="static text-black box-content caret-black shrink min-h-0 min-w-0 w-auto md:relative md:aspect-square md:box-border md:caret-transparent md:shrink-0 md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-10 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                        <div className="box-content caret-black h-auto w-auto md:aspect-square md:box-border md:caret-transparent md:h-full md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                            <img
-                                                src={props.logoUrl}
-                                                alt="Icon"
-                                                className="box-content caret-black h-auto align-middle w-auto md:aspect-auto md:box-border md:caret-transparent md:h-full md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                        <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-start text-wrap font-times md:text-white md:text-3xl md:font-bold md:aspect-auto md:box-border md:caret-transparent md:tracking-[-1.8px] md:leading-9 md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:text-center md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                            {props.logoText}
-                                        </p>
-                                    </div>
-                                </a>
-                                <div className="static box-content caret-black block flex-row shrink justify-normal max-w-none min-h-0 min-w-0 break-normal md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:max-w-[300px] md:min-h-[auto] md:min-w-[auto] md:break-words md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                    <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 break-normal font-times md:text-stone-300 md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.32px] md:leading-[22.4px] md:min-h-[auto] md:min-w-[auto] md:break-words md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                        {props.description}
-                                    </p>
-                                </div>
+        <footer className="relative w-full bg-black text-white overflow-hidden">
+            {/* Purple gradient background at top */}
+            <div
+                className="absolute top-0 left-0 right-0 h-[300px] pointer-events-none"
+                style={{
+                    background: 'linear-gradient(180deg, rgba(88, 28, 135, 0.3) 0%, rgba(0, 0, 0, 0) 100%)',
+                    opacity: 0.6
+                }}
+            />
+
+            {/* Main Footer Content */}
+            <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 pt-12 md:pt-16 pb-6 md:pb-8">
+                {/* Top Section - Logo, Description, Links */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.5fr,1fr,1fr,1fr] gap-10 md:gap-8 lg:gap-12 mb-8 md:mb-12">
+                    {/* Company Info */}
+                    <div className="flex flex-col gap-6 md:gap-6 pb-8 md:pb-0 border-b md:border-b-0 border-neutral-800">
+                        {/* Logo */}
+                        <div className="flex items-center gap-2.5">
+                            <div className="w-9 h-9 md:w-8 md:h-8 bg-purple-700 rounded flex items-center justify-center">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="md:w-5 md:h-5">
+                                    <path d="M12 2L2 7v10c0 5.5 3.8 9.7 9 11 5.2-1.3 9-5.5 9-11V7l-10-5z" fill="white" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M9 12l2 2 4-4" stroke="#7C3AED" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
                             </div>
-                            <div className="static [align-items:normal] box-content caret-black gap-x-[normal] block flex-row shrink h-auto justify-normal min-h-0 min-w-0 gap-y-[normal] w-auto md:relative md:content-start md:items-start md:aspect-auto md:box-border md:caret-transparent md:gap-x-2.5 md:flex md:flex-col md:shrink-0 md:h-min md:justify-center md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-2.5 md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                <div className="static box-content caret-black block flex-row shrink justify-normal max-w-none min-h-0 min-w-0 break-normal md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:max-w-[300px] md:min-h-[auto] md:min-w-[auto] md:break-words md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                    <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-start break-normal font-times md:text-white md:text-lg md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.36px] md:leading-[27px] md:min-h-[auto] md:min-w-[auto] md:break-words md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:text-center md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                        {props.newsletterTitle}
-                                    </p>
-                                </div>
-                                <div className="static box-content caret-black shrink max-w-none min-h-0 min-w-0 w-auto md:relative md:aspect-auto md:box-border md:caret-transparent md:shrink-0 md:max-w-xs md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                    <div className="static [align-items:normal] box-content caret-black block h-auto justify-normal max-w-none w-auto md:relative md:items-center md:aspect-auto md:box-border md:caret-transparent md:flex md:h-full md:justify-center md:max-w-full md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                        <form className="static text-black box-content caret-black gap-x-[normal] block min-h-0 min-w-0 gap-y-[normal] w-auto md:relative md:text-white md:aspect-auto md:box-border md:caret-transparent md:gap-x-0 md:flex md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-0 md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                            <input
-                                                type="hidden"
-                                                name="api_key"
-                                                value=""
-                                                className="text-black bg-white box-content caret-black inline-block md:appearance-none md:aspect-auto md:bg-transparent md:box-border md:caret-transparent md:hidden md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:p-0 md:scroll-m-0 md:scroll-p-[auto]"
-                                            />
-                                            <input
-                                                type="email"
-                                                name="email"
-                                                placeholder={props.emailPlaceholder}
-                                                value=""
-                                                className="text-[13.3333px] font-normal bg-white shadow-none box-content caret-black inline-block leading-[normal] min-h-0 min-w-0 w-auto px-0.5 py-px rounded-none font-arial md:appearance-none md:text-base md:font-medium md:aspect-auto md:bg-stone-950/80 md:shadow-[rgb(34,34,34)_0px_0px_0px_1px_inset] md:box-border md:caret-transparent md:block md:leading-4 md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-full md:[mask-position:0%] md:bg-left-top md:pl-[15px] md:pr-[115px] md:py-[15px] md:scroll-m-0 md:scroll-p-[auto] md:rounded-lg md:font-figtree"
-                                            />
-                                            <div className="static box-content caret-black right-auto inset-y-auto md:absolute md:aspect-auto md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:right-[5px] md:inset-y-[5px]">
-                                                <input
-                                                    type="submit"
-                                                    value={props.subscribeButtonText}
-                                                    className="text-[13.3333px] font-normal bg-white box-content caret-black h-auto leading-[normal] text-start text-wrap w-auto z-auto px-0.5 py-px rounded-none font-arial md:appearance-none md:text-base md:font-medium md:aspect-auto md:bg-purple-700 md:box-border md:caret-transparent md:h-full md:leading-4 md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:text-center md:decoration-auto md:underline-offset-auto md:text-nowrap md:w-[100px] md:z-[1] md:[mask-position:0%] md:bg-left-top md:px-[15px] md:py-0 md:scroll-m-0 md:scroll-p-[auto] md:rounded-[3px] md:font-figtree"
-                                                />
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                            <span className="text-white text-[22px] md:text-xl font-bold tracking-tight font-['Figtree',sans-serif]">
+                                IWM ACADEMY
+                            </span>
                         </div>
-                        <div className="static box-content caret-black block shrink justify-normal min-h-0 min-w-0 md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:shrink-0 md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] [align-items:normal] gap-x-[normal] basis-auto grow-0 h-auto gap-y-[normal] w-auto md:content-start md:items-start md:gap-x-2.5 md:basis-0 md:grow md:h-min md:justify-center md:gap-y-2.5 md:w-px md:overflow-hidden">
-                            <div className="static [align-items:normal] box-content caret-black gap-x-[normal] block basis-auto flex-row grow-0 shrink h-auto justify-normal min-h-0 min-w-0 gap-y-[normal] w-auto md:relative md:content-start md:items-start md:aspect-auto md:box-border md:caret-transparent md:gap-x-[7px] md:flex md:basis-0 md:flex-col md:grow md:shrink-0 md:h-min md:justify-center md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-[7px] md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-px md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                <div className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                    <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-start text-wrap font-times md:text-white md:text-lg md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.36px] md:leading-[27px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:text-left md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                        {props.linksTitle}
-                                    </p>
-                                </div>
-                                {props.links?.map((link, index) => (
-                                    <div
-                                        key={index}
-                                        className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
-                                    >
-                                        <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-wrap font-times md:text-stone-300 md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.32px] md:leading-[22.4px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                            <a
-                                                href={link.href}
-                                                className="box-content caret-black text-wrap md:aspect-auto md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] hover:text-white hover:border-white"
-                                            >
-                                                {link.text}
-                                            </a>
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="static [align-items:normal] box-content caret-black gap-x-[normal] block basis-auto flex-row grow-0 shrink h-auto justify-normal min-h-0 min-w-0 gap-y-[normal] w-auto md:relative md:content-start md:items-start md:aspect-auto md:box-border md:caret-transparent md:gap-x-[7px] md:flex md:basis-0 md:flex-col md:grow md:shrink-0 md:h-min md:justify-center md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-[7px] md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-px md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                <div className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                    <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-start text-wrap font-times md:text-white md:text-lg md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.36px] md:leading-[27px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:text-left md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                        {props.pagesTitle}
-                                    </p>
-                                </div>
-                                {props.pages?.map((page, index) => (
-                                    <div
-                                        key={index}
-                                        className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
-                                    >
-                                        <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-wrap font-times md:text-stone-300 md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.32px] md:leading-[22.4px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                            <a
-                                                href={page.href}
-                                                className="box-content caret-black text-wrap md:aspect-auto md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] hover:text-white hover:border-white"
-                                            >
-                                                {page.text}
-                                            </a>
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
-                            <div className="static [align-items:normal] box-content caret-black gap-x-[normal] block basis-auto flex-row grow-0 shrink h-auto justify-normal min-h-0 min-w-0 gap-y-[normal] w-auto md:relative md:content-start md:items-start md:aspect-auto md:box-border md:caret-transparent md:gap-x-[7px] md:flex md:basis-0 md:flex-col md:grow md:shrink-0 md:h-min md:justify-center md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:gap-y-[7px] md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-px md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                <div className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                                    <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-start text-wrap font-times md:text-white md:text-lg md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.36px] md:leading-[27px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:text-left md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                        {props.socialsTitle}
-                                    </p>
-                                </div>
-                                {props.socials?.map((social, index) => (
-                                    <div
-                                        key={index}
-                                        className="static box-content caret-black block flex-row shrink justify-normal min-h-0 min-w-0 text-wrap md:relative md:aspect-auto md:box-border md:caret-transparent md:flex md:flex-col md:shrink-0 md:justify-start md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
-                                    >
-                                        <p className="text-black text-base font-normal box-content caret-black tracking-[normal] leading-[normal] min-h-0 min-w-0 text-wrap font-times md:text-stone-300 md:font-medium md:aspect-auto md:box-border md:caret-transparent md:tracking-[-0.32px] md:leading-[22.4px] md:min-h-[auto] md:min-w-[auto] md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] md:font-figtree">
-                                            <a
-                                                href={social.href}
-                                                className="box-content caret-black text-wrap md:aspect-auto md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:text-nowrap md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] hover:text-white hover:border-white"
-                                            >
-                                                {social.text}
-                                            </a>
-                                        </p>
-                                    </div>
-                                ))}
-                            </div>
+
+                        {/* Description */}
+                        <p className="text-stone-300 text-[15px] md:text-[15px] font-medium tracking-[-0.3px] leading-[23px] md:leading-[22px] max-w-[400px] font-['Figtree',sans-serif]">
+                            Infinite World Markets Academy - Empowering traders with structured strategies, expert guidance, and a supportive community for consistent trading success.
+                        </p>
+
+                        {/* CTA Button */}
+                        <div className="flex flex-col gap-3">
+                            <a
+                                href="#pricing"
+                                className="inline-flex items-center justify-center bg-purple-700 hover:bg-purple-600 border border-purple-700 px-6 py-3 md:py-2.5 rounded-md text-white text-[15px] md:text-sm font-semibold md:font-medium transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-purple-900/30 font-['Figtree',sans-serif] w-fit"
+                            >
+                                Join Our Trading Groups
+                            </a>
                         </div>
                     </div>
-                </footer>
+
+                    {/* Trading Groups Column */}
+                    <div className="flex flex-col gap-4 md:gap-4">
+                        <h3 className="text-white text-[17px] md:text-base font-bold md:font-semibold tracking-[-0.34px] md:tracking-[-0.32px] leading-[22.4px] font-['Figtree',sans-serif]">
+                            Trading Groups
+                        </h3>
+                        <ul className="flex flex-col gap-3 md:gap-3">
+                            {links.tradingGroups.map((link, index) => (
+                                <li key={index}>
+                                    <a
+                                        href={link.href}
+                                        className="text-stone-300 hover:text-white text-[15px] font-medium tracking-[-0.3px] leading-[22px] md:leading-[21px] transition-colors font-['Figtree',sans-serif]"
+                                    >
+                                        {link.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Pages Column */}
+                    {/*<div className="flex flex-col gap-4 md:gap-4">*/}
+                    {/*    <h3 className="text-white text-[17px] md:text-base font-bold md:font-semibold tracking-[-0.34px] md:tracking-[-0.32px] leading-[22.4px] font-['Figtree',sans-serif]">*/}
+                    {/*        Quick Links*/}
+                    {/*    </h3>*/}
+                    {/*    <ul className="flex flex-col gap-3 md:gap-3">*/}
+                    {/*        {links.pages.map((link, index) => (*/}
+                    {/*            <li key={index}>*/}
+                    {/*                <a*/}
+                    {/*                    href={link.href}*/}
+                    {/*                    className="text-stone-300 hover:text-white text-[15px] font-medium tracking-[-0.3px] leading-[22px] md:leading-[21px] transition-colors font-['Figtree',sans-serif]"*/}
+                    {/*                >*/}
+                    {/*                    {link.name}*/}
+                    {/*                </a>*/}
+                    {/*            </li>*/}
+                    {/*        ))}*/}
+                    {/*    </ul>*/}
+                    {/*</div>*/}
+
+                    {/* Socials Column */}
+                    <div className="flex flex-col gap-4 md:gap-4">
+                        <h3 className="text-white text-[17px] md:text-base font-bold md:font-semibold tracking-[-0.34px] md:tracking-[-0.32px] leading-[22.4px] font-['Figtree',sans-serif]">
+                            Connect With Us
+                        </h3>
+                        <ul className="flex flex-col gap-3 md:gap-3">
+                            {links.socials.map((link, index) => (
+                                <li key={index}>
+                                    <a
+                                        href={link.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-stone-300 hover:text-white text-[15px] font-medium tracking-[-0.3px] leading-[22px] md:leading-[21px] transition-colors font-['Figtree',sans-serif]"
+                                    >
+                                        {link.name}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                {/* Divider */}
+                <div className="w-full h-[1px] bg-neutral-800 mb-6 md:mb-6" />
+
+                {/* Bottom Section - Copyright & Legal */}
+                <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-3 md:gap-4">
+                    {/* Legal Links */}
+                    <div className="flex items-center gap-4 order-3 md:order-1">
+                        <a
+                            href="#privacy"
+                            className="text-stone-400 hover:text-white text-[13px] md:text-sm font-medium tracking-[-0.26px] md:tracking-[-0.28px] leading-[18px] md:leading-[19.6px] transition-colors font-['Figtree',sans-serif]"
+                        >
+                            Privacy Policy
+                        </a>
+                        <a
+                            href="#terms"
+                            className="text-stone-400 hover:text-white text-[13px] md:text-sm font-medium tracking-[-0.26px] md:tracking-[-0.28px] leading-[18px] md:leading-[19.6px] transition-colors font-['Figtree',sans-serif]"
+                        >
+                            Terms of Service
+                        </a>
+                    </div>
+
+                    {/* Copyright */}
+                    <p className="text-stone-400 text-[13px] md:text-sm font-medium tracking-[-0.26px] md:tracking-[-0.28px] leading-[18px] md:leading-[19.6px] text-center order-1 md:order-2 font-['Figtree',sans-serif]">
+                        Copyright © 2025 IWM ACADEMY — All Rights Reserved
+                    </p>
+
+                    {/* Disclaimer */}
+                    <a
+                        href="#disclaimer"
+                        className="text-stone-400 hover:text-white text-[13px] md:text-sm font-medium tracking-[-0.26px] md:tracking-[-0.28px] leading-[18px] md:leading-[19.6px] order-2 md:order-3 transition-colors font-['Figtree',sans-serif]"
+                    >
+
+                    </a>
+                </div>
             </div>
-        </div>
+        </footer>
     );
 };
+
+export default Footer;
