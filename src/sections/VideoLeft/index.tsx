@@ -76,7 +76,7 @@ const AIAssistantSectionLeft = () => {
                                         playsInline
                                     >
                                         <source
-                                            src="assets/FirstDone.mp4"
+                                            src="../../../public/assets/FirstDone.mp4"
                                             type="video/mp4"
                                         />
                                     </video>
@@ -147,7 +147,7 @@ const AIAssistantSectionLeft = () => {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <source
-                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                src="../../../public/assets/FirstDone.mp4"
                                 type="video/mp4"
                             />
                             Your browser does not support the video tag.

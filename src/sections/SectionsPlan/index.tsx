@@ -15,10 +15,10 @@ const caseStudies: CaseStudy[] = [
     {
         id: 1,
         company: "Small Cap Group",
-        logo: "/logos/small-cap.svg",
+        logo: "../../public/logo/small-cap.svg",
         title: "High-Velocity Small-Cap Trading Built for Daily Opportunities",
         description: "The Small Cap Group is a fast-paced trading community focused on daily, short-term trades in low-priced, high-volatility stocks. Designed for traders who thrive on momentum and rapid market shifts, this group targets intraday opportunities that smaller stocks consistently provide.",
-        image: "/public/logo/1.jpg",
+        image: "../../public/logo/1.jpg",
         impacts: [
             "Intraday, High-Frequency Trade Setups",
             "Low-Priced, High-Volatility Stocks",
@@ -29,10 +29,10 @@ const caseStudies: CaseStudy[] = [
     {
         id: 2,
         company: "200K Group",
-        logo: "/logos/200k-group.svg",
+        logo: "../../public/logo/200k-group.svg",
         title: "Disciplined Daily Trading in Leading AI & Large-Cap Stocks",
         description: "The 200K Group is a premium trading community focused on short-term, daily trades in large-cap and mega-cap AI and technology leaders. This group is designed for traders seeking consistency, liquidity, and structured trade execution through fundamentally strong, well-established companies.",
-        image: "/public/logo/2.jpg",
+        image: "../../public/logo/2.jpg",
         impacts: [
             "Daily Trades in Large & Mega-Cap AI Stocks",
             "Highly Liquid Market Leaders",
@@ -44,10 +44,10 @@ const caseStudies: CaseStudy[] = [
     {
         id: 3,
         company: "Earnings Group",
-        logo: "/logos/3.jpg",
+        logo: "../../public/logo/3.jpg",
         title: "Event-Driven Trading Focused on Earnings Volatility",
         description: "The Earnings Group is a specialized trading community dedicated exclusively to trading volatility around earnings releases. Positions are taken across all market capitalizations and sectors, focusing purely on opportunity created by quarterly results, forward guidance, and market reaction.",
-        image: "/public/logo/3.jpg",
+        image: "../../public/logo/3.jpg",
         impacts: [
             "Event-Driven Trades Around Earnings Releases",
             "Stocks Across All Market Capitalizations",
@@ -59,10 +59,10 @@ const caseStudies: CaseStudy[] = [
     {
         id: 4,
         company: "Tough Market Group",
-        logo: "/logos/4.jpg",
+        logo: "../../public/logo/4.jpg",
         title: "Disciplined Short-Term Trading for Uncertain Market Conditions",
         description: "The Tough Market Group is designed for traders who want to remain active during unpredictable and challenging market environments. This group focuses on short-term trade opportunities in high-quality, blue-chip stocks, emphasizing liquidity, selectivity, and strict risk control when conditions become difficult.",
-        image: "/public/logo/4.jpg",
+        image: "../../public/logo/4.jpg",
         impacts: [
             "Short-Term Trades in Blue-Chip Stocks",
             "Adaptive Setups for Volatile Markets",

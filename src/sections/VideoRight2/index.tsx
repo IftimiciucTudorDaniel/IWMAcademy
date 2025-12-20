@@ -100,7 +100,7 @@ const AIAssistantSection2 = () => {
                                         playsInline
                                     >
                                         <source
-                                            src="assets/FourthVideo.mp4"
+                                            src="../../../public/assets/FourthVideo.mp4"
                                             type="video/mp4"
                                         />
                                     </video>
@@ -141,7 +141,7 @@ const AIAssistantSection2 = () => {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <source
-                                src="assets/FourthVideo.mp4"
+                                src="../../../public/assets/FourthVideo.mp4"
                                 type="video/mp4"
                             />
                             Your browser does not support the video tag.

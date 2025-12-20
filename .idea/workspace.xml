@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab537b6b-5677-4a71-a3e8-8cf6b3cc247c" name="Changes" comment="assets">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="ab537b6b-5677-4a71-a3e8-8cf6b3cc247c" name="Changes" comment="Done ?">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Carousell/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Carousell/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/SectionsPlan/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/SectionsPlan/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/VideoLeft/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/VideoLeft/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/VideoRight2/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/VideoRight2/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,9 +71,9 @@
       <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\public\logo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\public\assets" />
       <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\assets" />
       <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\public\logo" />
-      <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\public\assets" />
       <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\src\sections" />
       <recent name="C:\Users\tudor\Desktop\New folder\DiscordSite\src" />
     </key>
@@ -117,7 +121,7 @@
       <workItem from="1765715907181" duration="2410000" />
       <workItem from="1765921907879" duration="8687000" />
       <workItem from="1766087198488" duration="6623000" />
-      <workItem from="1766265123822" duration="6941000" />
+      <workItem from="1766265123822" duration="7886000" />
     </task>
     <task id="LOCAL-00001" summary="Things to improve">
       <option name="closed" value="true" />
@@ -167,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1766273655804</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="assets">
+      <option name="closed" value="true" />
+      <created>1766273879868</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766273879868</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Done ?">
+      <option name="closed" value="true" />
+      <created>1766274134245</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1766274134245</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +198,7 @@
     <MESSAGE value="New Website" />
     <MESSAGE value="adapt" />
     <MESSAGE value="assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="assets" />
+    <MESSAGE value="Done ?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done ?" />
   </component>
 </project>
