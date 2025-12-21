@@ -29,16 +29,16 @@ export default function StockCarousel({
     const [isPaused, setIsPaused] = useState(false);
 
     const stockLogos: Record<string, string> = {
-        'AAPL': '../../public/logo/apple.png',        // Apple
-        'GOOGL': '../../public/logo/google.png',      // Google
-        'MSFT': '../../public/logo/microsoft.png',    // Microsoft
-        'AMZN': '../../public/logo/amazon.png',       // Amazon
-        'TSLA': '../../public/logo/tesla.png',        // Tesla
-        'NVDA': '../../public/logo/nvidia.png',       // NVIDIA
-        'META': '../../public/logo/meta.png',         // Meta (Facebook)
-        'NFLX': '../../public/logo/netflix.png',      // Netflix
-        'AMD': '../../public/logo/amd.png',           // AMD
-        'INTC': '../../public/logo/intel.png',        // Intel
+        'AAPL': '/logo/apple.png',        // Apple
+        'GOOGL': '/logo/google.png',      // Google
+        'MSFT': '/logo/microsoft.png',    // Microsoft
+        'AMZN': '/logo/amazon.png',       // Amazon
+        'TSLA': '/logo/tesla.png',        // Tesla
+        'NVDA': '/logo/nvidia.png',       // NVIDIA
+        'META': '/logo/meta.png',         // Meta (Facebook)
+        'NFLX': '/logo/netflix.png',      // Netflix
+        'AMD': '/logo/amd.png',           // AMD
+        'INTC': '/logo/intel.png',        // Intel
     };
 
     const stockNames: Record<string, string> = {

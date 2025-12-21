@@ -32,7 +32,7 @@ const caseStudies: CaseStudy[] = [
         logo: "/public/logo/200k-group.svg",
         title: "Disciplined Daily Trading in Leading AI & Large-Cap Stocks",
         description: "The 200K Group is a premium trading community focused on short-term, daily trades in large-cap and mega-cap AI and technology leaders. This group is designed for traders seeking consistency, liquidity, and structured trade execution through fundamentally strong, well-established companies.",
-        image: "/public/logo/2.jpg",
+        image: "/logo/2.jpg",
         impacts: [
             "Daily Trades in Large & Mega-Cap AI Stocks",
             "Highly Liquid Market Leaders",
@@ -47,7 +47,7 @@ const caseStudies: CaseStudy[] = [
         logo: "../../public/logo/3.jpg",
         title: "Event-Driven Trading Focused on Earnings Volatility",
         description: "The Earnings Group is a specialized trading community dedicated exclusively to trading volatility around earnings releases. Positions are taken across all market capitalizations and sectors, focusing purely on opportunity created by quarterly results, forward guidance, and market reaction.",
-        image: "../../public/logo/3.jpg",
+        image: "/logo/3.jpg",
         impacts: [
             "Event-Driven Trades Around Earnings Releases",
             "Stocks Across All Market Capitalizations",
@@ -62,7 +62,7 @@ const caseStudies: CaseStudy[] = [
         logo: "../../public/logo/4.jpg",
         title: "Disciplined Short-Term Trading for Uncertain Market Conditions",
         description: "The Tough Market Group is designed for traders who want to remain active during unpredictable and challenging market environments. This group focuses on short-term trade opportunities in high-quality, blue-chip stocks, emphasizing liquidity, selectivity, and strict risk control when conditions become difficult.",
-        image: "../../public/logo/4.jpg",
+        image: "/logo/4.jpg",
         impacts: [
             "Short-Term Trades in Blue-Chip Stocks",
             "Adaptive Setups for Volatile Markets",
