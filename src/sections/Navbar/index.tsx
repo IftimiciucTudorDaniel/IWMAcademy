@@ -12,8 +12,8 @@ export const Navbar = () => {
     };
 
     return (
-        <div className="fixed w-full z-[4] left-0 top-0">
-            <nav className="bg-black border-b border-neutral-800">
+        <div className="fixed w-full z-50 left-0 top-0">
+            <nav className="bg-black border-b border-neutral-800 relative">
                 <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 py-2.5">
                     <div className="flex items-center justify-between">
                         {/* Logo Section */}
@@ -69,8 +69,6 @@ export const Navbar = () => {
                             >
                                 Pricing
                             </a>
-
-
                         </div>
 
                         {/* Mobile Menu Button */}
@@ -103,61 +101,71 @@ export const Navbar = () => {
                     {/* Mobile Menu */}
                     <div
                         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-                            isMobileMenuOpen 
-                                ? 'max-h-[500px] opacity-100 mt-4 pt-4 border-t border-neutral-800' 
+                            isMobileMenuOpen
+                                ? 'max-h-[500px] opacity-100 mt-4 pt-4 border-t border-neutral-800'
                                 : 'max-h-0 opacity-0 mt-0 pt-0 border-t-0'
                         }`}
                     >
                         <div className="space-y-2">
                             <a
-                                href="./"
+                                href="#"
                                 className={`block px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] font-figtree hover:bg-white/10 rounded transition-all duration-200 transform ${
                                     isMobileMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
                                 }`}
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.05s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                Test4
+                                Home
                             </a>
                             <a
-                                href="./about"
+                                href="#platform"
                                 className={`block px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] font-figtree hover:bg-white/10 rounded transition-all duration-200 transform ${
                                     isMobileMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
                                 }`}
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.1s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                Test3
+                                Our Platform
                             </a>
                             <a
-                                href="./blog"
+                                href="#groups"
                                 className={`block px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] font-figtree hover:bg-white/10 rounded transition-all duration-200 transform ${
                                     isMobileMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
                                 }`}
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.15s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                Test2
+                                Our Groups
                             </a>
                             <a
-                                href="./contact"
+                                href="#course"
                                 className={`block px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] font-figtree hover:bg-white/10 rounded transition-all duration-200 transform ${
                                     isMobileMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
                                 }`}
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.2s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                Test1
+                                Our Course
                             </a>
                             <a
-                                href="https://cal.com/"
-                                className={`block px-[13px] py-[9px] bg-purple-700 text-white text-sm font-medium tracking-[-0.28px] font-figtree rounded-md text-center hover:bg-purple-600 transition-all duration-200 transform ${
+                                href="#FAQ"
+                                className={`block px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] font-figtree hover:bg-white/10 rounded transition-all duration-200 transform ${
                                     isMobileMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
                                 }`}
                                 style={{ transitionDelay: isMobileMenuOpen ? '0.25s' : '0s' }}
                                 onClick={closeMobileMenu}
                             >
-                                Book a call
+                                FAQ
+                            </a>
+                            <a
+                                href="#pricing"
+                                className={`block px-[13px] py-[9px] bg-purple-700 text-white text-sm font-medium tracking-[-0.28px] font-figtree rounded-md text-center hover:bg-purple-600 transition-all duration-200 transform ${
+                                    isMobileMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+                                }`}
+                                style={{ transitionDelay: isMobileMenuOpen ? '0.3s' : '0s' }}
+                                onClick={closeMobileMenu}
+                            >
+                                Pricing
                             </a>
                         </div>
                     </div>

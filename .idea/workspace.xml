@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab537b6b-5677-4a71-a3e8-8cf6b3cc247c" name="Changes" comment="Assets moved3">
+    <list default="true" id="ab537b6b-5677-4a71-a3e8-8cf6b3cc247c" name="Changes" comment="Price Links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sections/PricingCards/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/PricingCards/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/Navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/Navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sections/SectionsPlan/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/sections/SectionsPlan/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +119,7 @@
       <workItem from="1765715907181" duration="2410000" />
       <workItem from="1765921907879" duration="8687000" />
       <workItem from="1766087198488" duration="6623000" />
-      <workItem from="1766265123822" duration="10789000" />
+      <workItem from="1766265123822" duration="11680000" />
     </task>
     <task id="LOCAL-00001" summary="Things to improve">
       <option name="closed" value="true" />
@@ -208,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766313276034</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Price Links">
+      <option name="closed" value="true" />
+      <created>1766314144386</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1766314144386</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +232,7 @@
     <MESSAGE value="Assets moved" />
     <MESSAGE value="Assets moved2" />
     <MESSAGE value="Assets moved3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assets moved3" />
+    <MESSAGE value="Price Links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Price Links" />
   </component>
 </project>
