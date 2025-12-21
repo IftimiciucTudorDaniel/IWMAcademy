@@ -78,20 +78,20 @@ export const Navbar = () => {
                             aria-label="Toggle mobile menu"
                             aria-expanded={isMobileMenuOpen}
                         >
-                            <div className="relative w-6 h-6">
+                            <div className="relative w-6 h-6 flex items-center justify-center">
                                 <span
-                                    className={`absolute top-0 left-0 w-full h-0.5 bg-current transition-all duration-300 ease-in-out ${
-                                        isMobileMenuOpen ? 'rotate-45 top-2.5' : 'rotate-0 top-0'
+                                    className={`absolute w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${
+                                        isMobileMenuOpen ? 'rotate-45' : 'rotate-0 -translate-y-2'
                                     }`}
                                 />
                                 <span
-                                    className={`absolute top-2.5 left-0 w-full h-0.5 bg-current transition-all duration-300 ease-in-out ${
-                                        isMobileMenuOpen ? 'opacity-0' : 'opacity-100'
+                                    className={`absolute w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${
+                                        isMobileMenuOpen ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
                                     }`}
                                 />
                                 <span
-                                    className={`absolute top-5 left-0 w-full h-0.5 bg-current transition-all duration-300 ease-in-out ${
-                                        isMobileMenuOpen ? '-rotate-45 top-2.5' : 'rotate-0 top-5'
+                                    className={`absolute w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${
+                                        isMobileMenuOpen ? '-rotate-45' : 'rotate-0 translate-y-2'
                                     }`}
                                 />
                             </div>
