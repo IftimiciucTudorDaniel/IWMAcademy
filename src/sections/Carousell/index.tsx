@@ -32,7 +32,7 @@ export default function StockCarousel({
         'AAPL': '../../public/logo/apple.png',        // Apple
         'GOOGL': '../../public/logo/google.png',      // Google
         'MSFT': '../../public/logo/microsoft.png',    // Microsoft
-        'AMZN': '../../public/amazon.png',       // Amazon
+        'AMZN': '../../public/logo/amazon.png',       // Amazon
         'TSLA': '../../public/logo/tesla.png',        // Tesla
         'NVDA': '../../public/logo/nvidia.png',       // NVIDIA
         'META': '../../public/logo/meta.png',         // Meta (Facebook)

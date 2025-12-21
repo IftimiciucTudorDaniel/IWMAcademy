@@ -18,7 +18,7 @@ const caseStudies: CaseStudy[] = [
         logo: "../../public/logo/small-cap.svg",
         title: "High-Velocity Small-Cap Trading Built for Daily Opportunities",
         description: "The Small Cap Group is a fast-paced trading community focused on daily, short-term trades in low-priced, high-volatility stocks. Designed for traders who thrive on momentum and rapid market shifts, this group targets intraday opportunities that smaller stocks consistently provide.",
-        image: "../../public/logo/1.jpg",
+        image: "/logo/1.jpg",
         impacts: [
             "Intraday, High-Frequency Trade Setups",
             "Low-Priced, High-Volatility Stocks",
@@ -29,10 +29,10 @@ const caseStudies: CaseStudy[] = [
     {
         id: 2,
         company: "200K Group",
-        logo: "../../public/logo/200k-group.svg",
+        logo: "/public/logo/200k-group.svg",
         title: "Disciplined Daily Trading in Leading AI & Large-Cap Stocks",
         description: "The 200K Group is a premium trading community focused on short-term, daily trades in large-cap and mega-cap AI and technology leaders. This group is designed for traders seeking consistency, liquidity, and structured trade execution through fundamentally strong, well-established companies.",
-        image: "../../public/logo/2.jpg",
+        image: "/public/logo/2.jpg",
         impacts: [
             "Daily Trades in Large & Mega-Cap AI Stocks",
             "Highly Liquid Market Leaders",
