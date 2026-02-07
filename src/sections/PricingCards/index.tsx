@@ -73,9 +73,9 @@ const PricingSection: React.FC = () => {
                 oneYear: 3500
             },
             links: {
-                oneMonth: 'https://checkout.revolut.com/pay/4fd5aa71-73ba-4426-aba5-09d240d474b2',
-                sixMonths: 'https://checkout.revolut.com/pay/43ecc633-fa1c-4a79-932b-361e0dc337f4',
-                oneYear: 'https://checkout.revolut.com/pay/7ed6488f-4f8f-4f4e-ae53-484753a6ab6a'
+                oneMonth: '#',
+                sixMonths: '#',
+                oneYear: '#'
             },
             description: 'High-frequency daily trading focused on volatile small-cap stocks.',
             buttonText: 'Join Small Cap Group',
@@ -99,9 +99,9 @@ const PricingSection: React.FC = () => {
                 oneYear: 3500
             },
             links: {
-                oneMonth: 'https://checkout.revolut.com/pay/22b5ad39-32ee-4c6e-90fa-8bbc3fb92bdd',
-                sixMonths: 'https://checkout.revolut.com/pay/6917cbd6-b454-4f9d-b5cb-64b550c41c7f',
-                oneYear: 'https://checkout.revolut.com/pay/c98281ba-2fc6-4e1b-b6b1-2a32c9b5995a'
+                oneMonth: '#',
+                sixMonths: '#',
+                oneYear: '#'
             },
             description: 'Structured daily trading in large-cap AI and technology leaders.',
             buttonText: 'Join 200K Group',
@@ -126,9 +126,9 @@ const PricingSection: React.FC = () => {
                 oneYear: 3500
             },
             links: {
-                oneMonth: 'https://checkout.revolut.com/pay/782713f5-af76-4bcb-b903-66c9a7be91bb',
-                sixMonths: 'https://checkout.revolut.com/pay/954baf2c-ce31-4d84-bc38-8ac859ab3150',
-                oneYear: 'https://checkout.revolut.com/pay/3aa1e47c-1b79-4e0d-8ca6-1aed565be3ee'
+                oneMonth: '#',
+                sixMonths: '#',
+                oneYear: '#'
             },
             description: 'Event-driven trading focused on earnings season volatility.',
             buttonText: 'Join Earnings Group',
@@ -152,9 +152,9 @@ const PricingSection: React.FC = () => {
                 oneYear: 3500
             },
             links: {
-                oneMonth: 'https://checkout.revolut.com/pay/7721f84b-ccad-4d8e-8d9c-e75f7079298e',
-                sixMonths: 'https://checkout.revolut.com/pay/b34f8565-a3a6-4787-96d5-4354c9cfa151',
-                oneYear: 'https://checkout.revolut.com/pay/8f6a84ba-2ea2-47b1-987e-c5651ab8afce'
+                oneMonth: '#',
+                sixMonths: '#',
+                oneYear: '#'
             },
             description: 'Selective short-term trades designed for uncertain market conditions.',
             buttonText: 'Join Tough Market Group',
@@ -180,9 +180,9 @@ const PricingSection: React.FC = () => {
             oneYear: 8640
         },
         links: {
-            oneMonth: 'https://checkout.revolut.com/pay/c67fba50-342c-4328-b43e-88cedddfc1cc',
-            sixMonths: 'https://checkout.revolut.com/pay/c67fba50-342c-4328-b43e-88cedddfc1cc',
-            oneYear: 'https://checkout.revolut.com/pay/c67fba50-342c-4328-b43e-88cedddfc1cc'
+            oneMonth: '#',
+            sixMonths: '#',
+            oneYear: '#'
         },
         description: 'Get complete access to all trading groups with one comprehensive package for maximum trading opportunities.',
         buttonText: 'Buy All Groups for 1 Year',
