@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
             { name: 'All Groups Bundle', href: '#all-groups' }
         ],
         socials: [
-            { name: 'Discord', href: '#' },
-            { name: 'TikTok', href: '#' },
-            { name: 'Instagram', href: '#' },
-            { name: 'YouTube', href: '#' },
-            { name: 'X (Twitter)', href: '#' }
+            { name: 'Discord', href: 'https://discord.gg/FYP5zn5qUA' },
+            { name: 'TikTok', href: 'https://www.tiktok.com/@iwmacademy' },
+            { name: 'Instagram', href: 'https://www.instagram.com/iwm.academy/' },
+            { name: 'YouTube', href: 'https://www.youtube.com/@INFINITE.WORLD.MARKETS.ACADEMY' },
+            { name: 'X (Twitter)', href: 'https://x.com/iwmacademy' }
         ]
     };
 
