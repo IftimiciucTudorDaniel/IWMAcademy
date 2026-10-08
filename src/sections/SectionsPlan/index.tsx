@@ -270,16 +270,12 @@ const CaseStudiesCarousel: React.FC = () => {
                                             {/* Content */}
                                             <div className="flex-1 flex flex-col gap-4 sm:gap-5 md:gap-6 justify-center">
                                                 {/* Logo */}
-                                                <div className="h-6 sm:h-7 md:h-8">
-                                                    <img
-                                                        src={study.logo}
-                                                        alt={`${study.company} logo`}
-                                                        className="h-full object-contain pointer-events-none select-none"
-                                                        draggable="false"
-                                                        style={{
-                                                            userSelect: 'none',
-                                                        }}
-                                                    />
+                                                <div className="h-6 sm:h-7 md:h-8 flex items-center">
+                                                    <span
+                                                        className="text-lg sm:text-xl md:text-2xl font-semibold leading-none whitespace-nowrap pointer-events-none select-none"
+                                                    >
+                                                        {study.company}
+                                                    </span>
                                                 </div>
 
                                                 {/* Title & Description */}
@@ -330,7 +326,7 @@ const CaseStudiesCarousel: React.FC = () => {
                         {/* Drag to Explore Text */}
                         <div className="flex items-center gap-2 px-3 sm:px-4 py-2 select-none bg-black">
                             <span className="text-xs sm:text-sm text-neutral-400 uppercase tracking-wider font-medium">
-                                DRAG TO EXPLORE
+                                EXPLORE
                             </span>
                         </div>
 
