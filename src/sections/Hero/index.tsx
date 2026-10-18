@@ -7,7 +7,7 @@ import Testimonial from "@/sections/Testimonial";
 import FAQ from "@/sections/FAQ";
 import AIAssistantSection2 from "@/sections/VideoRight2";
 import AIAssistantSectionLeft2 from "@/sections/VideoLeft2";
-import BenefitsSection from "@/sections/BenefitsSection";
+// import BenefitsSection from "@/sections/BenefitsSection";
 export const Hero = () => {
     return (
         <div className="relative content-center items-center bg-black box-border caret-transparent gap-x-0 contents flex-col h-min justify-start min-h-[1000px] gap-y-0 overflow-hidden">
@@ -196,32 +196,32 @@ export const Hero = () => {
                 </div>
             </section>
             <CaseStudiesCarousel/>
-            <section id="course" className="relative content-center items-center box-border caret-transparent gap-x-[60px] flex flex-col shrink-0 h-min justify-center gap-y-[10px] w-full overflow-hidden px-6 py-16 md:px-10 md:py-[1px]">
-                <div className="relative content-center items-center box-border caret-transparent gap-x-[25px] flex flex-col shrink-0 h-min justify-center gap-y-[25px] w-full overflow-hidden">
-                    <div className="relative box-border caret-transparent shrink-0 z-[2]">
-                        <div className="relative content-center items-center bg-stone-950/80 box-border caret-transparent gap-x-[5px] flex h-min justify-center gap-y-[5px] w-min overflow-hidden px-3 py-2 rounded-md after:accent-auto after:box-border after:caret-transparent after:text-black after:block after:text-xs after:not-italic after:normal-nums after:font-normal after:h-full after:tracking-[normal] after:leading-[normal] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-start after:indent-[0px] after:normal-case after:visible after:w-full after:border after:border-neutral-800 after:rounded-md after:border-separate after:border-solid after:left-0 after:top-0 after:font-sans_serif">
-                            <div className="relative box-border caret-transparent flex flex-col shrink-0 justify-start text-nowrap">
-                                <p className="text-white text-sm font-medium box-border caret-transparent tracking-[-0.28px] leading-[16.8px] text-nowrap font-figtree">
-                                    Our Course
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="relative content-center items-center box-border caret-transparent gap-x-[15px] flex flex-col shrink-0 h-min justify-center gap-y-[15px] w-full overflow-hidden">
-                        <div className="relative box-border caret-transparent flex flex-col shrink-0 justify-start max-w-[700px] w-full">
-                            <h2 className="text-white text-[28px] box-border caret-transparent tracking-[-1.12px] leading-[30.8px] text-center font-figtree_variable md:text-[50px] md:tracking-[-2px] md:leading-[55px]">
-                                Everything You Need to Become a Consistent Trader
-                            </h2>
-                        </div>
-                        <div className="relative box-border caret-transparent flex flex-col shrink-0 justify-start max-w-[600px] break-words w-full">
-                            <p className="text-stone-300 text-base font-medium box-border caret-transparent tracking-[-0.32px] leading-6 break-words text-center font-figtree md:text-lg md:tracking-[-0.36px] md:leading-[27px]">
-                                This program is designed to take you from stock selection to execution, mindset, and consistency. Through structured video sets and live trading groups, you’ll learn how to trade with confidence, manage risk, and build reliable income across all market conditions.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <BenefitsSection/>
-            </section>
+            {/*<section id="course" className="relative content-center items-center box-border caret-transparent gap-x-[60px] flex flex-col shrink-0 h-min justify-center gap-y-[10px] w-full overflow-hidden px-6 py-16 md:px-10 md:py-[1px]">*/}
+            {/*    <div className="relative content-center items-center box-border caret-transparent gap-x-[25px] flex flex-col shrink-0 h-min justify-center gap-y-[25px] w-full overflow-hidden">*/}
+            {/*        <div className="relative box-border caret-transparent shrink-0 z-[2]">*/}
+            {/*            <div className="relative content-center items-center bg-stone-950/80 box-border caret-transparent gap-x-[5px] flex h-min justify-center gap-y-[5px] w-min overflow-hidden px-3 py-2 rounded-md after:accent-auto after:box-border after:caret-transparent after:text-black after:block after:text-xs after:not-italic after:normal-nums after:font-normal after:h-full after:tracking-[normal] after:leading-[normal] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-start after:indent-[0px] after:normal-case after:visible after:w-full after:border after:border-neutral-800 after:rounded-md after:border-separate after:border-solid after:left-0 after:top-0 after:font-sans_serif">*/}
+            {/*                <div className="relative box-border caret-transparent flex flex-col shrink-0 justify-start text-nowrap">*/}
+            {/*                    <p className="text-white text-sm font-medium box-border caret-transparent tracking-[-0.28px] leading-[16.8px] text-nowrap font-figtree">*/}
+            {/*                        Our Course*/}
+            {/*                    </p>*/}
+            {/*                </div>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className="relative content-center items-center box-border caret-transparent gap-x-[15px] flex flex-col shrink-0 h-min justify-center gap-y-[15px] w-full overflow-hidden">*/}
+            {/*            <div className="relative box-border caret-transparent flex flex-col shrink-0 justify-start max-w-[700px] w-full">*/}
+            {/*                <h2 className="text-white text-[28px] box-border caret-transparent tracking-[-1.12px] leading-[30.8px] text-center font-figtree_variable md:text-[50px] md:tracking-[-2px] md:leading-[55px]">*/}
+            {/*                    Everything You Need to Become a Consistent Trader*/}
+            {/*                </h2>*/}
+            {/*            </div>*/}
+            {/*            <div className="relative box-border caret-transparent flex flex-col shrink-0 justify-start max-w-[600px] break-words w-full">*/}
+            {/*                <p className="text-stone-300 text-base font-medium box-border caret-transparent tracking-[-0.32px] leading-6 break-words text-center font-figtree md:text-lg md:tracking-[-0.36px] md:leading-[27px]">*/}
+            {/*                    This program is designed to take you from stock selection to execution, mindset, and consistency. Through structured video sets and live trading groups, you’ll learn how to trade with confidence, manage risk, and build reliable income across all market conditions.*/}
+            {/*                </p>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <BenefitsSection/>*/}
+            {/*</section>*/}
             <PricingCards/>
             <Testimonial/>
             <FAQ/>

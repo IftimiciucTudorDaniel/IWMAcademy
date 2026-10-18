@@ -245,10 +245,10 @@ const PricingSection: React.FC = () => {
                     {/* Title & Description */}
                     <div className="flex flex-col gap-4 items-center max-w-4xl px-4">
                         <h2 className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[56px] font-bold tracking-tight leading-tight md:tracking-[-2px] md:leading-[55px] lg:leading-[62px] font-['Figtree',sans-serif]">
-                            The Best AI Automation, at the Right Price
+                            Powerful Trading Signals, at the Right Price
                         </h2>
                         <p className="text-stone-300 text-base md:text-lg font-medium tracking-[-0.32px] md:tracking-[-0.36px] leading-6 md:leading-[27px] max-w-2xl font-['Figtree',sans-serif]">
-                            Choose a plan that fits your business needs and start automating with AI
+                            Choose a plan that fits your trading style and start trading with confidence
                         </p>
                     </div>
 
