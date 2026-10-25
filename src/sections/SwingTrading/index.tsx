@@ -7,10 +7,10 @@ const CHECKOUT_LINK = 'https://checkout.revolut.com/subscription/a2ac11b7-b68d-4
 
 const features: string[] = [
     '2–4x Live Trading Sessions Every Month',
-    'Mr B Exclusive Swing Watchlist',
+    'Exclusive Swing Watchlist',
     'Weekly Market & Swing Setup Updates',
     'Private Trade & Portfolio Reviews',
-    'Private Mr B Trading Community'
+    'Private Trading Community'
 ];
 
 const SwingTradingSection: React.FC = () => {
