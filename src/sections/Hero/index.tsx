@@ -2,6 +2,7 @@ import Carousel from "@/sections/Carousell";
 import AIAssistantSection from "@/sections/VideoRight";
 import AIAssistantSectionReversed from "@/sections/VideoLeft";
 import CaseStudiesCarousel from "@/sections/SectionsPlan";
+import SwingTradingSection from "@/sections/SwingTrading";
 import PricingCards from "@/sections/PricingCards";
 import Testimonial from "@/sections/Testimonial";
 import FAQ from "@/sections/FAQ";
@@ -195,6 +196,7 @@ export const Hero = () => {
                     <AIAssistantSection2/>
                 </div>
             </section>
+            <SwingTradingSection/>
             <CaseStudiesCarousel/>
             {/*<section id="course" className="relative content-center items-center box-border caret-transparent gap-x-[60px] flex flex-col shrink-0 h-min justify-center gap-y-[10px] w-full overflow-hidden px-6 py-16 md:px-10 md:py-[1px]">*/}
             {/*    <div className="relative content-center items-center box-border caret-transparent gap-x-[25px] flex flex-col shrink-0 h-min justify-center gap-y-[25px] w-full overflow-hidden">*/}

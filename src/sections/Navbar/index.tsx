@@ -43,6 +43,12 @@ export const Navbar = () => {
                                     Our Platform
                                 </a>
                                 <a
+                                    href="#swing-trading"
+                                    className="px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] leading-[16.8px] font-figtree hover:bg-white/10 rounded transition-colors"
+                                >
+                                    Swing Trade
+                                </a>
+                                <a
                                     href="#groups"
                                     className="px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] leading-[16.8px] font-figtree hover:bg-white/10 rounded transition-colors"
                                 >
@@ -126,6 +132,16 @@ export const Navbar = () => {
                                 onClick={closeMobileMenu}
                             >
                                 Our Platform
+                            </a>
+                            <a
+                                href="#swing-trading"
+                                className={`block px-3.5 py-2 text-white text-sm font-medium tracking-[-0.28px] font-figtree hover:bg-white/10 rounded transition-all duration-200 transform ${
+                                    isMobileMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-4 opacity-0'
+                                }`}
+                                style={{ transitionDelay: isMobileMenuOpen ? '0.125s' : '0s' }}
+                                onClick={closeMobileMenu}
+                            >
+                                Swing Trade
                             </a>
                             <a
                                 href="#groups"
