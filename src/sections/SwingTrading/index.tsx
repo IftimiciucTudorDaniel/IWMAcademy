@@ -66,7 +66,7 @@ const SwingTradingSection: React.FC = () => {
                     {/* Title & Description */}
                     <div className="flex flex-col gap-4 items-center max-w-4xl px-4">
                         <h2 className="text-[32px] sm:text-[40px] md:text-[50px] lg:text-[56px] font-bold tracking-tight leading-tight md:tracking-[-2px] md:leading-[55px] lg:leading-[62px] font-['Figtree',sans-serif]">
-                            Swing Trade with Mr B, at the Right Price
+                            Swing Trade at the Right Price
                         </h2>
                         <p className="text-stone-300 text-base md:text-lg font-medium tracking-[-0.32px] md:tracking-[-0.36px] leading-6 md:leading-[27px] max-w-2xl font-['Figtree',sans-serif]">
                             A monthly plan built for traders who want to catch multi-day moves with clear setups and guidance
@@ -105,7 +105,7 @@ const SwingTradingSection: React.FC = () => {
                                     <TrendingUp className="w-6 h-6 text-white" strokeWidth={2.2} />
                                 </div>
                                 <h3 className="text-white text-2xl md:text-[28px] font-bold tracking-[-0.5px] leading-tight font-['Figtree',sans-serif]">
-                                    R B Swing Trading
+                                    Swing Trading
                                 </h3>
                             </div>
 
@@ -143,7 +143,7 @@ const SwingTradingSection: React.FC = () => {
                                 className="group flex items-center justify-center w-full px-4 py-3.5 rounded-lg font-semibold transition-all duration-300 transform hover:scale-[1.03] active:scale-[0.98] bg-purple-700 hover:bg-purple-800 shadow-lg shadow-purple-900/30"
                             >
                                 <p className="text-white text-[15px] font-bold tracking-[-0.3px] leading-[18px] text-center font-['Figtree',sans-serif] group-hover:scale-105 transition-transform">
-                                    Join R B Swing Trading
+                                    Join Swing Trading
                                 </p>
                             </a>
                         </div>
