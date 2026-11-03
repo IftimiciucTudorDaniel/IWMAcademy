@@ -1,7 +1,6 @@
 import { Navbar } from "@/sections/Navbar";
 import { Hero } from "@/sections/Hero";
 import Footer from "@/sections/Footer";
-import LiveEventPopup from "@/sections/LiveEventPopup";
 
 
 export const App = () => {
@@ -12,7 +11,6 @@ export const App = () => {
                 <Navbar />
                 <Hero />
                 <Footer/>
-                <LiveEventPopup/>
 
             </div>
             <div className="box-border caret-transparent"></div>
