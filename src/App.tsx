@@ -1,57 +1,41 @@
-import { Navbar } from "@/sections/Navbar";
-import { Hero } from "@/sections/Hero";
-import Footer from "@/sections/Footer";
-
+import "@/royal-green.css";
+import { RoyalGreenProvider } from "@/royal-green/context";
+import { Navbar } from "@/royal-green/Navbar";
+import { Hero, Ribbon } from "@/royal-green/Hero";
+import { SampleTrades } from "@/royal-green/SampleTrades";
+import { TradeVideos } from "@/royal-green/TradeVideos";
+import { Desks } from "@/royal-green/Desks";
+import { MemberTerminal } from "@/royal-green/MemberTerminal";
+import { Membership } from "@/royal-green/Membership";
+import { FAQ, FinalCTA } from "@/royal-green/FAQ";
+import { Footer } from "@/royal-green/Footer";
+import { MobileCTA } from "@/royal-green/MobileCTA";
+import { JoinModal } from "@/royal-green/JoinModal";
 
 export const App = () => {
     return (
-        <div className="text-black text-xs not-italic normal-nums font-normal accent-auto bg-black box-border caret-transparent block tracking-[normal] leading-[normal] list-outside list-disc pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-sans_serif">
-        <div className="box-border caret-transparent">
-            <div className="relative content-center items-center bg-black box-border caret-transparent gap-x-0 flex flex-col h-min justify-start min-h-[1000px] gap-y-0 overflow-hidden">
+        <RoyalGreenProvider>
+            <div className="rg-page">
+                <div className="rg-prebar">
+                    IWM ACADEMY &nbsp;•&nbsp; PRIVATE TRADING RESEARCH &amp; EDUCATION &nbsp;•&nbsp; ROYAL GREEN
+                    2.0
+                </div>
                 <Navbar />
-                <Hero />
-                <Footer/>
-
+                <main>
+                    <Hero />
+                    <Ribbon />
+                    <SampleTrades />
+                    <TradeVideos />
+                    <Desks />
+                    <MemberTerminal />
+                    <Membership />
+                    <FAQ />
+                    <FinalCTA />
+                </main>
+                <Footer />
+                <MobileCTA />
+                <JoinModal />
             </div>
-            <div className="box-border caret-transparent"></div>
-        </div>
-        <div className="absolute box-border caret-transparent h-0 w-0 z-0 overflow-hidden left-0 bottom-0">
-            <img
-                src="https://c.animaapp.com/mhrys1hg2q1D6i/assets/icon-63.svg"
-                alt="Icon"
-                className="box-border caret-transparent h-[512px] w-[512px]"
-            />
-            <img
-                src="https://c.animaapp.com/mhrys1hg2q1D6i/assets/icon-64.svg"
-                alt="Icon"
-                className="box-border caret-transparent"
-            />
-            <img
-                src="https://c.animaapp.com/mhrys1hg2q1D6i/assets/icon-65.svg"
-                alt="Icon"
-                className="box-border caret-transparent"
-            />
-            <img
-                src="https://c.animaapp.com/mhrys1hg2q1D6i/assets/icon-66.svg"
-                alt="Icon"
-                className="box-border caret-transparent"
-            />
-            <img
-                src="https://c.animaapp.com/mhrys1hg2q1D6i/assets/icon-67.svg"
-                alt="Icon"
-                className="box-border caret-transparent"
-            />
-            <img
-                src="https://c.animaapp.com/mhrys1hg2q1D6i/assets/icon-68.svg"
-                alt="Icon"
-                className="box-border caret-transparent"
-            />
-            <img
-                src="https://c.animaapp.com/mhrys1hg2q1D6i/assets/icon-69.svg"
-                alt="Icon"
-                className="box-border caret-transparent"
-            />
-        </div>
-        </div>
+        </RoyalGreenProvider>
     );
 };
