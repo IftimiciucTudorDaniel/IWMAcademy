@@ -161,9 +161,16 @@ export const desks: Desk[] = [
     },
 ];
 
-export const deskSelectOptions: { value: DeskKey; label: string }[] = [
+// The exact four desks covered by the All Desks Bundle — rendered as an
+// explicit list wherever the bundle is shown, so there is never any doubt
+// about what is (and, pointedly, what is not: Swing Trade) included.
+export const bundleDesks = desks.filter((d) => d.key !== "swing");
+
+// Swing Trade is deliberately NOT listed here. It is sold as its own,
+// standalone membership (see SwingMembership.tsx) so it can never be
+// mistaken for something included in the All Desks Bundle.
+export const deskSelectOptions: { value: Exclude<DeskKey, "swing">; label: string }[] = [
     { value: "ai", label: "Large-Cap & AI Desk (200K)" },
-    { value: "swing", label: "Swing Trading Desk" },
     { value: "small", label: "Small Cap Desk" },
     { value: "earnings", label: "Earnings Desk" },
     { value: "tough", label: "Tough Market Desk" },

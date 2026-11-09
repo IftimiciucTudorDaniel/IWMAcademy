@@ -1,8 +1,12 @@
-import { desks } from "./data";
+import { bundleDesks, desks } from "./data";
 import { useRoyalGreen } from "./context";
 
 export const Desks = () => {
     const { goToMembership } = useRoyalGreen();
+
+    const scrollToSwing = () => {
+        document.getElementById("swing-membership")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
 
     return (
         <section className="rg-section rg-alt" id="desks">
@@ -28,7 +32,12 @@ export const Desks = () => {
                             <p>{desk.desc}</p>
                             <div className="rg-desk-footer">
                                 <span>{desk.footer}</span>
-                                <button className="rg-text-link" onClick={() => goToMembership(desk.key)}>
+                                <button
+                                    className="rg-text-link"
+                                    onClick={() =>
+                                        desk.key === "swing" ? scrollToSwing() : goToMembership(desk.key)
+                                    }
+                                >
                                     Explore this desk →
                                 </button>
                             </div>
@@ -40,7 +49,15 @@ export const Desks = () => {
                     <div>
                         <span className="rg-eyebrow">For members who want broad coverage</span>
                         <h3>All Desks Membership</h3>
-                        <p>One subscription for all five desks, if enabled in your verified product catalogue.</p>
+                        <p>One subscription covering exactly these four desks:</p>
+                        <div className="rg-bundle-includes">
+                            {bundleDesks.map((d) => (
+                                <span className="rg-bundle-chip" key={d.key}>
+                                    ✓ {d.name}
+                                </span>
+                            ))}
+                            <span className="rg-bundle-chip rg-exclude">✕ Swing Trade — not included</span>
+                        </div>
                     </div>
                     <button className="rg-btn rg-ivory" onClick={() => goToMembership("all")}>
                         Explore all desks →

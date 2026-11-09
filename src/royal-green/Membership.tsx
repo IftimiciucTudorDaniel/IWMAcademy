@@ -1,6 +1,7 @@
 import {
     DeskKey,
     Term,
+    bundleDesks,
     deskNames,
     deskPricing,
     deskSelectOptions,
@@ -9,6 +10,7 @@ import {
     termLabels,
 } from "./data";
 import { useRoyalGreen } from "./context";
+import { SwingMembership } from "./SwingMembership";
 
 // The 6-month term has been discontinued across every desk.
 const periods: Term[] = [1, 12];
@@ -29,7 +31,9 @@ export const Membership = () => {
                     <h2>Choose your desk. Choose your term. You're ready.</h2>
                     <p>
                         Just one research-desk choice, one membership-period choice and a clear secure
-                        checkout. Nothing unnecessary.
+                        checkout. Nothing unnecessary. The desk picker below covers Large-Cap &amp; AI, Small
+                        Cap, Earnings, Tough Market and the bundle built from them — Swing Trade has its own
+                        separate membership further down this section.
                     </p>
                 </div>
 
@@ -83,6 +87,18 @@ export const Membership = () => {
                             <div className="rg-tiny">
                                 {termLabels[term]} membership · recurring only with explicit consent
                             </div>
+                            {isBundle && (
+                                <div className="rg-bundle-includes" style={{ marginTop: 12 }}>
+                                    {bundleDesks.map((d) => (
+                                        <span className="rg-bundle-chip" key={d.key}>
+                                            ✓ {d.name}
+                                        </span>
+                                    ))}
+                                    <span className="rg-bundle-chip rg-exclude">
+                                        ✕ Swing Trade — not included
+                                    </span>
+                                </div>
+                            )}
                         </div>
                         <div>
                             <div className="rg-tiny">MEMBERSHIP PRICE</div>
@@ -110,7 +126,7 @@ export const Membership = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Pay securely with Revolut →
+                                START YOUR JOURNEY →
                             </a>
                         ) : (
                             <button className="rg-btn rg-ivory" onClick={() => openModal("checkout")}>
@@ -119,6 +135,8 @@ export const Membership = () => {
                         )}
                     </div>
                 </div>
+
+                <SwingMembership />
             </div>
         </section>
     );

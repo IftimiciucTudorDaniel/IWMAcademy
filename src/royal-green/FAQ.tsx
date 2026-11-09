@@ -9,7 +9,7 @@ const faqs = [
     },
     {
         q: "Is Swing Trade available separately?",
-        a: "Yes, Swing Trade is included as a dedicated desk in this website redesign, with its own membership selection and example trade. Actual availability and billing must follow the approved product catalogue.",
+        a: "Yes. Swing Trade is its own standalone desk with its own membership and checkout — it is not included in the All Desks Bundle and is never bundled with the other four desks.",
     },
     {
         q: "Can I subscribe monthly, for 6 months or for 1 year?",

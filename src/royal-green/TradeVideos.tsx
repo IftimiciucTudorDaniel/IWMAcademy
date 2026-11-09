@@ -19,12 +19,7 @@ export const TradeVideos = () => (
     <section className="rg-section rg-alt" id="trade-videos">
         <div className="rg-container">
             <div className="rg-section-title">
-                <span className="rg-eyebrow">Play. Learn. Download.</span>
                 <h2>Watch a trade walk from entry to exit.</h2>
-                <p>
-                    Two silent, captioned demonstrations show exactly how a long and a short plan move through
-                    position, stop loss and target — narrated entirely with on-screen levels.
-                </p>
             </div>
             <div className="rg-videos">
                 {videos.map((v) => (
