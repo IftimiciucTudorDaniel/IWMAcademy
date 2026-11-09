@@ -2,14 +2,12 @@ const videos = [
     {
         title: "01 / Long trade walkthrough",
         file: "/royal-green/videos/long-trade-example.mp4",
-        download: "IWM-Academy-Long-Trade-Example.mp4",
         caption: "Buy $124.50 · Stop $118.75 · Target $133.00 · Example sell $133.00",
         note: "Swing Trading Desk · fictional buy example",
     },
     {
         title: "02 / Short trade walkthrough",
         file: "/royal-green/videos/short-trade-example.mp4",
-        download: "IWM-Academy-Short-Trade-Example.mp4",
         caption: "Sell short $91.00 · Stop $96.50 · Cover target $82.00 · Cover exit $82.00",
         note: "Tough Market Desk · fictional short example",
     },
@@ -38,9 +36,6 @@ export const TradeVideos = () => (
                         />
                         <div className="rg-video-card-foot">
                             <span>{v.caption}</span>
-                            <a className="rg-text-link" href={v.file} download={v.download}>
-                                Download MP4 →
-                            </a>
                         </div>
                     </article>
                 ))}
