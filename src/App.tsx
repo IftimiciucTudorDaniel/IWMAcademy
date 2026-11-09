@@ -17,8 +17,7 @@ export const App = () => {
         <RoyalGreenProvider>
             <div className="rg-page">
                 <div className="rg-prebar">
-                    IWM ACADEMY &nbsp;•&nbsp; PRIVATE TRADING RESEARCH &amp; EDUCATION &nbsp;•&nbsp; ROYAL GREEN
-                    2.0
+                    IWM ACADEMY &nbsp;•&nbsp; PRIVATE TRADING RESEARCH &amp; EDUCATION
                 </div>
                 <Navbar />
                 <main>

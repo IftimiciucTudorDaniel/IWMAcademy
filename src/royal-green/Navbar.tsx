@@ -28,7 +28,7 @@ export const Navbar = () => {
                     <Crest className="rg-crest" />
                     <span className="rg-wordmark">
                         <strong>IWM ACADEMY</strong>
-                        <span>INFINITE WORLD MARKET ACADEMY</span>
+                        <span>INFINITE WORLD MARKETS ACADEMY</span>
                     </span>
                 </a>
                 <nav className="rg-navlinks" aria-label="Main navigation">

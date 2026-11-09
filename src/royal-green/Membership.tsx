@@ -86,11 +86,14 @@ export const Membership = () => {
                         </div>
                         <div>
                             <div className="rg-tiny">MEMBERSHIP PRICE</div>
-                            <strong>
-                                {price !== undefined
-                                    ? `${formatPrice(price)} ${periodSuffix[term]}`
-                                    : "Price pending for this desk / term"}
-                            </strong>
+                            {price !== undefined ? (
+                                <div className="rg-price">
+                                    <span className="rg-price-amount">{formatPrice(price)}</span>
+                                    <span className="rg-price-period">{periodSuffix[term]}</span>
+                                </div>
+                            ) : (
+                                <strong className="rg-price-pending">Price pending for this desk / term</strong>
+                            )}
                         </div>
                     </div>
 

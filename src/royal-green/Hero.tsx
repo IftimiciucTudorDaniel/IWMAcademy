@@ -3,7 +3,7 @@ export const Hero = () => (
         <div className="rg-container rg-hero-content">
             <div>
                 <span className="rg-eyebrow">A more considered approach to the markets</span>
-                <div className="rg-brand-banner">INFINITE WORLD MARKET ACADEMY</div>
+                <div className="rg-brand-banner">INFINITE WORLD MARKETS ACADEMY</div>
                 <h1>
                     Every trade begins with <em>a plan.</em>
                 </h1>

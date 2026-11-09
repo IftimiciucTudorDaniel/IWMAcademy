@@ -319,23 +319,30 @@
 
 .rg-hero-proof {
   display: flex;
-  gap: 24px;
+  gap: 12px;
   flex-wrap: wrap;
   margin-top: 40px;
-  font-size: 11px;
-  color: #dcece0;
 }
 
 .rg-hero-proof span {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  padding: 11px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(29, 126, 80, 0.35), rgba(15, 74, 49, 0.35));
+  border: 1px solid rgba(158, 215, 184, 0.4);
+  font-size: 13px;
+  font-weight: 700;
+  color: #f1fbf4;
+  letter-spacing: 0.01em;
 }
 
 .rg-hero-proof i {
-  width: 6px;
-  height: 6px;
-  background: #97d6b0;
+  width: 8px;
+  height: 8px;
+  background: #9ef0c4;
+  box-shadow: 0 0 10px rgba(158, 240, 196, 0.85);
   border-radius: 100%;
 }
 
@@ -1085,6 +1092,37 @@
 }
 
 .rg-plan-overview strong {
+  font: 400 17px var(--rg-serif);
+  color: #e6eddc;
+}
+
+.rg-price {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 18px;
+  margin-top: 4px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1d7e50, #0f4a31);
+  border: 1px solid #5ecf93;
+  box-shadow: 0 10px 28px rgba(33, 135, 95, 0.35);
+}
+
+.rg-price-amount {
+  font: 800 34px var(--rg-sans);
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.rg-price-period {
+  font-size: 13px;
+  font-weight: 700;
+  color: #cdeedb;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.rg-price-pending {
   font: 400 17px var(--rg-serif);
   color: #e6eddc;
 }

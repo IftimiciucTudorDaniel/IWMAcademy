@@ -9,7 +9,7 @@ export const Footer = () => (
                         <Crest className="rg-crest" style={{ width: 53, height: 53 }} />
                         <span className="rg-wordmark">
                             <strong style={{ fontSize: 23 }}>IWM ACADEMY</strong>
-                            <span>INFINITE WORLD MARKET ACADEMY</span>
+                            <span>INFINITE WORLD MARKETS ACADEMY</span>
                         </span>
                     </a>
                     <p>
