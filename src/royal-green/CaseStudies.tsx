@@ -10,7 +10,6 @@ const timeline = [
 
 export const CaseStudies = () => {
     const { exampleDesk, setExampleDesk } = useRoyalGreen();
-    const lab = desks.find((d) => d.key === exampleDesk)!;
     const study = caseStudies[exampleDesk];
 
     return (
@@ -73,9 +72,6 @@ export const CaseStudies = () => {
                             This case study is entirely fictional, not a live recommendation or verified result.
                             Students independently choose how, or whether, to apply what they learn.
                         </p>
-                        <button className="rg-text-link" style={{ marginTop: 14 }}>
-                            Open the full {lab.name} lesson →
-                        </button>
                     </article>
                 </div>
 
