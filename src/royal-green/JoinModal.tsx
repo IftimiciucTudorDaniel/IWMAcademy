@@ -103,7 +103,7 @@ export const JoinModal = () => {
         >
             <div className="rg-modal-box">
                 <div className="rg-modal-header">
-                    <strong>IWM ACADEMY · MEMBER JOURNEY</strong>
+                    <strong>IWM ACADEMY · STUDENT JOURNEY</strong>
                     <button className="rg-close" ref={closeRef} aria-label="Close preview" onClick={handleClose}>
                         ×
                     </button>
@@ -150,7 +150,7 @@ export const JoinModal = () => {
                             <span className="rg-eyebrow">2 / 3 · Review</span>
                             <h2>Everything, clearly explained.</h2>
                             <p>
-                                One desk, one term, a transparent renewal policy. A production website must
+                                One Learning Lab, one term, a transparent renewal policy. A production website must
                                 display the exact verified amount and charge date before enabling payment.
                             </p>
                             {summary}
@@ -192,6 +192,7 @@ export const JoinModal = () => {
                             {stepper}
                             <span className="rg-eyebrow">3 / 3 · Payment handoff</span>
                             <h2>A calm, secure checkout.</h2>
+
                             <p>
                                 The live product will open a verified, payment-provider-hosted checkout.
                                 Payment details are never collected by this prototype. Access activates only
@@ -204,7 +205,7 @@ export const JoinModal = () => {
                             {summary}
                             <div className="rg-modal-actions">
                                 <button className="rg-btn rg-ivory" onClick={() => setStep(3)}>
-                                    See member dashboard demo →
+                                    See student portal demo →
                                 </button>
                                 <button className="rg-link-btn" onClick={() => setStep(1)}>
                                     Back
@@ -215,8 +216,8 @@ export const JoinModal = () => {
 
                     {step === 3 && (
                         <>
-                            <span className="rg-eyebrow">Member portal · preview only</span>
-                            <h2>Welcome to your desk.</h2>
+                            <span className="rg-eyebrow">Student portal · preview only</span>
+                            <h2>Welcome to your lab.</h2>
                             <p>
                                 On the real site, this view is unlocked only after verified payment. Here, it is
                                 a public demonstration of the experience.
@@ -225,16 +226,16 @@ export const JoinModal = () => {
                                 <span className="rg-demo-flag">Sample dashboard · no account created</span>
                                 <h3>{deskNames[selectedDesk]}</h3>
                                 <div className="rg-dashboard-row">
-                                    <span>Trade plans</span>
-                                    <b>Examples with full entry / stop / targets</b>
+                                    <span>Lessons</span>
+                                    <b>Case studies with full scenario, pathway and takeaway</b>
                                 </div>
                                 <div className="rg-dashboard-row">
                                     <span>Updates</span>
                                     <b>Timestamped changes &amp; commentary</b>
                                 </div>
                                 <div className="rg-dashboard-row">
-                                    <span>Trade archive</span>
-                                    <b>Exit and cancellation history</b>
+                                    <span>Lesson archive</span>
+                                    <b>Review and outcome history</b>
                                 </div>
                                 <div className="rg-dashboard-row">
                                     <span>Discord</span>
@@ -246,9 +247,9 @@ export const JoinModal = () => {
                                 </div>
                             </div>
                             <div className="rg-notice">
-                                The finished member portal will use real research content and server-enforced
-                                desk permissions. It will not execute brokerage orders or manage members'
-                                investment funds.
+                                The finished student portal will use real educational content and
+                                server-enforced lab permissions. It will not execute brokerage orders or
+                                manage students' investment funds.
                             </div>
                             <div className="rg-modal-actions">
                                 <button className="rg-btn rg-ivory" onClick={handleClose}>

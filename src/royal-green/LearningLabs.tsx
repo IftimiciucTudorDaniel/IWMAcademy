@@ -1,7 +1,7 @@
 import { bundleDesks, desks } from "./data";
 import { useRoyalGreen } from "./context";
 
-export const Desks = () => {
+export const LearningLabs = () => {
     const { goToMembership } = useRoyalGreen();
 
     const scrollToSwing = () => {
@@ -9,14 +9,14 @@ export const Desks = () => {
     };
 
     return (
-        <section className="rg-section rg-alt" id="desks">
+        <section className="rg-section rg-alt" id="learning-labs">
             <div className="rg-container">
                 <div className="rg-section-title">
-                    <span className="rg-eyebrow">Membership research desks</span>
-                    <h2>Find the desk that matches how you trade.</h2>
+                    <span className="rg-eyebrow">Program directory</span>
+                    <h2>Five specialist Learning Labs.</h2>
                     <p>
-                        Five clear research experiences. One consistent format for reading a plan, managing
-                        risk and understanding the exit.
+                        Five clear learning experiences. One consistent format for reading a case study,
+                        understanding risk and following the educational curriculum.
                     </p>
                 </div>
 
@@ -38,7 +38,7 @@ export const Desks = () => {
                                         desk.key === "swing" ? scrollToSwing() : goToMembership(desk.key)
                                     }
                                 >
-                                    Explore this desk →
+                                    Explore this lab →
                                 </button>
                             </div>
                         </article>
@@ -47,20 +47,22 @@ export const Desks = () => {
 
                 <div className="rg-bundle">
                     <div>
-                        <span className="rg-eyebrow">For members who want broad coverage</span>
-                        <h3>All Desks Membership</h3>
-                        <p>One subscription covering exactly these four desks:</p>
+                        <span className="rg-eyebrow">For students who want broad coverage</span>
+                        <h3>All Labs Bundle</h3>
+                        <p>One membership covering exactly these four Learning Labs:</p>
                         <div className="rg-bundle-includes">
                             {bundleDesks.map((d) => (
                                 <span className="rg-bundle-chip" key={d.key}>
                                     ✓ {d.name}
                                 </span>
                             ))}
-                            <span className="rg-bundle-chip rg-exclude">✕ Swing Trade — not included</span>
+                            <span className="rg-bundle-chip rg-exclude">
+                                ✕ Market Timing Lab — not included
+                            </span>
                         </div>
                     </div>
                     <button className="rg-btn rg-ivory" onClick={() => goToMembership("all")}>
-                        Explore all desks →
+                        Explore all labs →
                     </button>
                 </div>
             </div>

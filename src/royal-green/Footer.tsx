@@ -13,20 +13,20 @@ export const Footer = () => (
                         </span>
                     </a>
                     <p>
-                        Private market research and educational trade planning. Investing and trading involve
-                        risk, including loss of principal. This website presents a design concept and
-                        illustrative examples, not a live membership service or real-time market data
-                        platform.
+                        Private online financial learning environment. Investing and trading involve risk,
+                        including loss of principal. This website presents an educational design concept and
+                        illustrative case studies, not investment advice, a live brokerage service or
+                        real-time market data platform.
                     </p>
                 </div>
                 <div className="rg-footer-links">
-                    <a href="#desks">Trading desks</a>
+                    <a href="#learning-labs">Learning Labs</a>
                     <a href="#membership">Membership</a>
                     <a href="#faq">FAQ</a>
                 </div>
             </div>
             <div className="rg-footer-bottom">
-                © 2026 IWM Academy · Illustrative examples only · Policies and legal
+                © 2026 IWM Academy · Illustrative case studies only · Policies and legal
                 company details to be supplied by IWM.
             </div>
         </div>

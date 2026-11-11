@@ -8,18 +8,19 @@
 */
 
 .rg-page {
-  --rg-bg: #061b15;
-  --rg-bg2: #08291f;
-  --rg-bg3: #10392b;
-  --rg-forest: #104c35;
+  /* Royal Green 2.0 signature palette (Design Release 02 — The Learning Ecosystem) */
+  --rg-bg: #061e17;
+  --rg-bg2: #0e3327;
+  --rg-bg3: #144331;
+  --rg-forest: #144331;
   --rg-emerald: #16835b;
-  --rg-mint: #9ed7b8;
-  --rg-ivory: #f7f6f0;
-  --rg-text: #e5f0e7;
-  --rg-muted: #aac2b2;
-  --rg-line: rgba(195, 231, 209, 0.15);
-  --rg-gold: #cbbd96;
-  --rg-panel: #0c2e23;
+  --rg-mint: #b5cdbd;
+  --rg-ivory: #f5f2e7;
+  --rg-text: #f5f2e7;
+  --rg-muted: #b5cdbd;
+  --rg-line: rgba(229, 188, 79, 0.18);
+  --rg-gold: #e5bc4f;
+  --rg-panel: #0e3327;
   --rg-danger: #eca28f;
   --rg-ok: #9be2b8;
   --rg-serif: Georgia, "Times New Roman", serif;
@@ -459,6 +460,122 @@
   color: #b5ceb9;
 }
 
+/* ---------- Hero ecosystem panel ---------- */
+
+.rg-ecosystem-medallion {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.rg-ring {
+  border: 1px solid rgba(229, 188, 79, 0.45);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rg-ring-outer {
+  width: 132px;
+  height: 132px;
+}
+
+.rg-ring-mid {
+  width: 96px;
+  height: 96px;
+  border-color: rgba(229, 188, 79, 0.6);
+}
+
+.rg-ring-inner {
+  width: 60px;
+  height: 60px;
+  border-color: var(--rg-gold);
+  background: rgba(20, 67, 49, 0.6);
+}
+
+.rg-ring-inner span {
+  font-family: var(--rg-serif);
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  color: var(--rg-gold);
+}
+
+.rg-ecosystem-caption {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.rg-ecosystem-caption h3 {
+  font: 400 24px var(--rg-serif);
+  margin: 6px 0 8px;
+}
+
+.rg-ecosystem-caption h3 em {
+  font-style: normal;
+  color: var(--rg-gold);
+}
+
+.rg-ecosystem-caption p {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.rg-ecosystem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rg-ecosystem-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  padding: 11px 14px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  background: rgba(8, 36, 27, 0.55);
+  color: var(--rg-text);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.rg-ecosystem-row:hover {
+  border-color: var(--rg-line);
+}
+
+.rg-ecosystem-row.rg-active {
+  background: linear-gradient(135deg, rgba(229, 188, 79, 0.22), rgba(20, 67, 49, 0.6));
+  border-color: var(--rg-gold);
+}
+
+.rg-ecosystem-num {
+  font-family: var(--rg-serif);
+  color: var(--rg-gold);
+  font-size: 13px;
+  min-width: 18px;
+}
+
+.rg-ecosystem-name {
+  flex: 1;
+}
+
+.rg-ecosystem-detail {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--rg-line);
+}
+
+.rg-ecosystem-detail p {
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--rg-muted);
+}
+
 /* ---------- Ribbon ---------- */
 
 .rg-ribbon {
@@ -533,6 +650,12 @@
   grid-template-columns: 1fr 1.08fr;
   gap: 28px;
   align-items: stretch;
+}
+
+.rg-sample-layout-single {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .rg-sample-left,
@@ -750,6 +873,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 8px;
   gap: 10px;
   border-bottom: 1px solid var(--rg-line);
 }
@@ -1010,7 +1135,6 @@
   border-collapse: collapse;
   font-size: 11px;
   margin-top: 22px;
-  min-width: 340px;
 }
 
 .rg-mini-table th {
@@ -1554,12 +1678,14 @@
   .rg-brand-banner { font-size: 12px; margin: 18px 0 12px; }
   .rg-hero h1 { font-size: clamp(49px, 11vw, 67px); max-width: 550px; }
   .rg-hero p { font-size: 13px; line-height: 1.83; }
-  .rg-hero-actions { margin-top: 23px; }
+  .rg-hero-actions { margin-top: 23px; flex-direction: column; align-items: stretch; }
+  .rg-hero-actions .rg-btn { width: 100%; }
   .rg-hero-proof { margin-top: 27px; gap: 12px; }
   .rg-hero-demo { margin-top: 42px; }
-  .rg-demo-header { padding: 19px; }
+  .rg-demo-header { padding: 19px; flex-wrap: wrap; row-gap: 8px; }
   .rg-hero-demo-inner { padding: 20px; }
-  .rg-demo-bottom { padding: 15px 20px; }
+  .rg-demo-bottom { padding: 15px 20px; flex-wrap: wrap; row-gap: 6px; }
+  .rg-ecosystem-row { font-size: 12px; padding: 10px 11px; }
   .rg-ribbon-row { grid-template-columns: 1fr; }
   .rg-ribbon-row div { padding: 16px 19px; border-right: 0; border-bottom: 1px solid var(--rg-line); }
   .rg-section { padding: 74px 0; }
@@ -1620,6 +1746,8 @@
   .rg-app-menu { display: none; }
   .rg-app-main { overflow-x: auto; }
   .rg-app-head { padding: 17px; }
+  .rg-mini-table { min-width: 0; }
+  .rg-mini-table th, .rg-mini-table td { padding: 10px 6px; font-size: 10px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

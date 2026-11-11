@@ -3,17 +3,17 @@ import { Crest } from "./Crest";
 import { useRoyalGreen } from "./context";
 
 const navItems = [
-    { href: "#sample-trades", label: "Trade examples" },
-    { href: "#desks", label: "Trading desks" },
-    { href: "#experience", label: "Member terminal" },
-    { href: "#membership", label: "Membership" },
+    { href: "#learning-labs", label: "Learning Labs" },
+    { href: "#case-studies", label: "Case studies" },
+    { href: "#experience", label: "Student portal" },
+    { href: "#membership", label: "Access plans" },
 ];
 
 const mobileNavItems = [
-    { href: "#sample-trades", label: "Explore trade examples" },
-    { href: "#desks", label: "Browse trading desks" },
-    { href: "#experience", label: "Member terminal" },
-    { href: "#membership", label: "Choose membership" },
+    { href: "#learning-labs", label: "Browse Learning Labs" },
+    { href: "#case-studies", label: "Explore case studies" },
+    { href: "#experience", label: "Student portal" },
+    { href: "#membership", label: "Choose access plan" },
     { href: "#faq", label: "Questions" },
 ];
 
@@ -38,7 +38,7 @@ export const Navbar = () => {
                         </a>
                     ))}
                     <button className="rg-btn rg-small" onClick={() => goToMembership()}>
-                        Join the Academy →
+                        Explore access →
                     </button>
                 </nav>
                 <button

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Term, deskPricing, formatPrice, periodSuffix } from "./data";
 
-// Deliberately separate from the shared Membership dropdown/context: Swing
-// Trade is its own desk with its own membership, never grouped with the
-// other four desks or the All Desks Bundle, so it can never be mistaken for
-// something the bundle already includes.
+// Deliberately separate from the shared Membership dropdown/context: the
+// Market Timing Lab is its own lab with its own membership, never grouped
+// with the other four labs or the All Labs Bundle, so it can never be
+// mistaken for something the bundle already includes.
 const periods: Term[] = [1, 12];
 const pricing = deskPricing.swing;
 
@@ -17,10 +17,10 @@ export const SwingMembership = () => {
         <div id="swing-membership" className="rg-swing-membership">
             <div className="rg-swing-membership-head">
                 <span className="rg-eyebrow">Sold on its own · not part of any bundle</span>
-                <h3>Swing Trading Desk</h3>
+                <h3>Market Timing Lab</h3>
                 <p>
-                    Swing Trade is a standalone desk with its own membership. It is never included in the All
-                    Desks Bundle above — join it separately here.
+                    The Market Timing Lab is a standalone lab with its own membership. It is never included
+                    in the All Labs Bundle above — join it separately here.
                 </p>
             </div>
 
@@ -40,7 +40,7 @@ export const SwingMembership = () => {
             <div className="rg-plan-overview">
                 <div>
                     <span className="rg-eyebrow">YOUR SELECTION</span>
-                    <h3>Swing Trading Desk</h3>
+                    <h3>Market Timing Lab</h3>
                     <div className="rg-tiny">
                         {term === 12 ? "12-month" : "1-month"} membership · recurring only with explicit
                         consent

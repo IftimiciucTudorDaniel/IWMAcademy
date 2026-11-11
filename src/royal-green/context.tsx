@@ -24,7 +24,7 @@ export const RoyalGreenProvider = ({ children }: { children: ReactNode }) => {
     const [exampleDesk, setExampleDesk] = useState<Exclude<DeskKey, "all">>("ai");
     const [modalMode, setModalMode] = useState<ModalMode>(null);
 
-    // The All Desks Bundle is only offered as a 1-year membership, so
+    // The All Labs Bundle is only offered as a 1-year membership, so
     // selecting it always forces the term to 12 months.
     const setSelectedDesk = (d: DeskKey) => {
         setSelectedDeskRaw(d);

@@ -12,7 +12,7 @@ import {
 import { useRoyalGreen } from "./context";
 import { SwingMembership } from "./SwingMembership";
 
-// The 6-month term has been discontinued across every desk.
+// The 6-month term has been discontinued across every lab.
 const periods: Term[] = [1, 12];
 
 export const Membership = () => {
@@ -28,19 +28,20 @@ export const Membership = () => {
             <div className="rg-container">
                 <div className="rg-section-title">
                     <span className="rg-eyebrow">A simpler way to join</span>
-                    <h2>Choose your desk. Choose your term. You're ready.</h2>
+                    <h2>Choose your lab. Choose your term. You're ready.</h2>
                     <p>
-                        Just one research-desk choice, one membership-period choice and a clear secure
-                        checkout. Nothing unnecessary. The desk picker below covers Large-Cap &amp; AI, Small
-                        Cap, Earnings, Tough Market and the bundle built from them — Swing Trade has its own
-                        separate membership further down this section.
+                        Just one Learning Lab choice, one membership-period choice and a clear secure
+                        checkout. Nothing unnecessary. The lab picker below covers the Portfolio Growth,
+                        Small-Cap Opportunity, Earnings Analysis and Defensive Strategy Labs and the bundle
+                        built from them — the Market Timing Lab has its own separate membership further down
+                        this section.
                     </p>
                 </div>
 
                 <div className="rg-pricing-container">
                     <div className="rg-pricing-grid">
                         <div>
-                            <label htmlFor="rgDeskSelect">1. Your research desk</label>
+                            <label htmlFor="rgDeskSelect">1. Your Learning Lab</label>
                             <select
                                 id="rgDeskSelect"
                                 value={selectedDesk}
@@ -74,7 +75,7 @@ export const Membership = () => {
                             </div>
                             {isBundle && (
                                 <p className="rg-tiny" style={{ marginTop: 10 }}>
-                                    The All Desks Bundle is offered as a 1-year membership only.
+                                    The All Labs Bundle is offered as a 1-year membership only.
                                 </p>
                             )}
                         </div>
@@ -95,7 +96,7 @@ export const Membership = () => {
                                         </span>
                                     ))}
                                     <span className="rg-bundle-chip rg-exclude">
-                                        ✕ Swing Trade — not included
+                                        ✕ Market Timing Lab — not included
                                     </span>
                                 </div>
                             )}
@@ -108,7 +109,7 @@ export const Membership = () => {
                                     <span className="rg-price-period">{periodSuffix[term]}</span>
                                 </div>
                             ) : (
-                                <strong className="rg-price-pending">Price pending for this desk / term</strong>
+                                <strong className="rg-price-pending">Price pending for this lab / term</strong>
                             )}
                         </div>
                     </div>
@@ -117,7 +118,7 @@ export const Membership = () => {
                         <p className="rg-fineprint" style={{ maxWidth: 460, margin: 0 }}>
                             {link
                                 ? "You'll complete payment securely on Revolut's hosted checkout. Membership renews automatically for the selected term unless cancelled."
-                                : "This desk / term combination isn't connected to a verified price and checkout yet. Preview the member journey below, or choose a different desk or term."}
+                                : "This lab / term combination isn't connected to a verified price and checkout yet. Preview the student journey below, or choose a different lab or term."}
                         </p>
                         {link ? (
                             <a
@@ -130,7 +131,7 @@ export const Membership = () => {
                             </a>
                         ) : (
                             <button className="rg-btn rg-ivory" onClick={() => openModal("checkout")}>
-                                Preview joining this desk →
+                                Preview joining this lab →
                             </button>
                         )}
                     </div>
