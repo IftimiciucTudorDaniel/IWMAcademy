@@ -32,7 +32,7 @@ export const Membership = () => {
                     <p>
                         Just one Learning Lab choice, one membership-period choice and a clear secure
                         checkout. Nothing unnecessary. The lab picker below covers the Portfolio Growth,
-                        Small-Cap Opportunity, Earnings Analysis and Defensive Strategy Labs and the bundle
+                        Small-Cap Opportunity, Earnings Analysis and Defensive Labs and the bundle
                         built from them — the Market Timing Lab has its own separate membership further down
                         this section.
                     </p>

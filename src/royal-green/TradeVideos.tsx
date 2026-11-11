@@ -9,7 +9,7 @@ const videos = [
         title: "02 / Hypothetical short-side case study",
         file: "/royal-green/videos/short-trade-example.mp4",
         caption: "A hypothetical defensive scenario walkthrough for unsettled market conditions.",
-        note: "Defensive Strategy Lab · fictional case study",
+        note: "Defensive Lab · fictional case study",
     },
 ];
 

@@ -12,7 +12,7 @@ export const deskNames: Record<DeskKey, string> = {
     swing: "Market Timing Lab",
     small: "Small-Cap Opportunity Lab",
     earnings: "Earnings Analysis Lab",
-    tough: "Defensive Strategy Lab",
+    tough: "Defensive Lab",
     all: "All Labs Bundle",
 };
 
@@ -83,7 +83,7 @@ export const desks: Desk[] = [
         key: "tough",
         index: "05",
         tag: "RISK",
-        name: "Defensive Strategy Lab",
+        name: "Defensive Lab",
         aka: "Downside-planning study",
         desc: "Market uncertainty, downside planning, resilience and decision-making when conditions are unsettled.",
         footer: "Risk-first study",
@@ -105,7 +105,7 @@ export const deskSelectOptions: { value: Exclude<DeskKey, "swing">; label: strin
     { value: "ai", label: "Portfolio Growth Lab (200K)" },
     { value: "small", label: "Small-Cap Opportunity Lab" },
     { value: "earnings", label: "Earnings Analysis Lab" },
-    { value: "tough", label: "Defensive Strategy Lab" },
+    { value: "tough", label: "Defensive Lab" },
     { value: "all", label: "All Labs Bundle" },
 ];
 
